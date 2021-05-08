@@ -1,4 +1,4 @@
-let data = `{
+let data = {
     "lat": 33.53,
     "lon": -112.18,
     "timezone": "America/Phoenix",
@@ -1692,8 +1692,19 @@ let data = `{
             "uvi": 10
         }
     ]
-}`
+}
 
 // Get the Current Degrees, Time Zone, Feels Like
+
+// Sun icon
+{/* <i class="bi bi-brightness-high"></i> */}
+
+// cloud
+{/* <i class="bi bi-brightness-high"></i> */}
+
+// raining
+{/* <i class="bi bi-cloud-drizzle"></i> */}
+
+
 
 console.log(data)

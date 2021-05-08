@@ -1,0 +1,35 @@
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+$blue: hsl(207, 42%, 36%);
+$borders: hsl(34, 100%, 75%);
+
+body {
+    background-color: #72A0C1 !important;
+}
+
+.weeklyView {
+    background-color: $blue;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px 50px;
+    justify-content: space-evenly;
+    border: 5px solid $borders;
+    border-radius: 1rem;
+    margin-right: 500px;
+    margin-left: 500px;
+    .weekday {
+        border: 1px solid $borders;
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+        // line-height: 200%;
+    }
+}
+
+
