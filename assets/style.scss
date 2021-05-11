@@ -17,6 +17,12 @@ body {
         color: #fff;
         position: relative;
         background: transparent;
+
+        li{
+            &:hover{
+                border-bottom: 2px solid white;
+            }
+        }
     
         &::before{
             content: "";
@@ -35,6 +41,7 @@ body {
 .navy{
     background-color: #024759 !important;
 }
+
 
 .weeklyView {
     background-color: $blue;

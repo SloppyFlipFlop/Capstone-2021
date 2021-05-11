@@ -18,6 +18,10 @@ body nav {
   background: transparent;
 }
 
+body nav li:hover {
+  border-bottom: 2px solid white;
+}
+
 body nav::before {
   content: "";
   position: fixed;
