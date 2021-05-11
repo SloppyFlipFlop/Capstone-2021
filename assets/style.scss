@@ -13,6 +13,8 @@ body {
     background-color: #72A0C1 !important;
 }
 
+// Weekly style
+
 .weeklyView {
     background-color: $blue;
     display: flex;
@@ -29,6 +31,12 @@ body {
         height: fit-content;
         text-align: center;
         // line-height: 200%;
+        svg {
+            
+            color: white;
+            height: 100px !important;
+            width: 100px !important;
+        }
     }
 }
 

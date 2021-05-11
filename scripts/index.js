@@ -1697,14 +1697,78 @@ let data = {
 // Get the Current Degrees, Time Zone, Feels Like
 
 // Sun icon
-{/* <i class="bi bi-brightness-high"></i> */}
+const sunnyIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+<path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+</svg>`
+
 
 // cloud
-{/* <i class="bi bi-brightness-high"></i> */}
+const cloudyIcon = `<i class="bi bi-brightness-high"></i>`
 
 // raining
-{/* <i class="bi bi-cloud-drizzle"></i> */}
+const rainingIcon = `<i class="bi bi-cloud-drizzle"></i>`
+
+// humidity
+const humidityIcon = `<i class="bi bi-droplet-fill"></i>`
+
+// Night
+const nightIcon = `<i class="bi bi-moon-stars"></i>`
+
+// Night and cloudy
+const NightAndCloudyIcon = `<i class="bi bi-cloud-moon"></i>`
 
 
 
-console.log(data)
+// An array of all the days in the week
+let daysInWeek = ["Sunday", "Monday", "Tuesday", "Wensday", "Thusday", "Friday", "saturday"]
+
+function msToHMS(duration) {
+
+    var milliseconds = parseInt((duration % 1000) / 100),
+        seconds = parseInt((duration / 1000) % 60),
+        minutes = parseInt((duration / (1000 * 60)) % 60),
+        hours = parseInt((duration / (1000 * 60 * 60)) % 24);
+
+    hours = (hours < 10) ? "0" + hours : hours;
+    minutes = (minutes < 10) ? "0" + minutes : minutes;
+    seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+    return hours + ":" + minutes + ":" + seconds;
+}
+
+// An array that will hold all the temps of the day to be be used later
+let dailyTempArray = [];
+// An loop that loops though all the day to get the temp of the day and then it pushs that temp into the array "dailyTempArray".
+for (let i = 0; i < data.daily.length; i++) {
+    dailyTempArray.push(data.daily[i].temp.day)
+}
+// console.log(dailyTempArray)
+
+const getDayType = (currentDay) => {
+    if(currentDay == "Clear") {
+        return sunnyIcon;
+    }else {
+        return "";
+    }
+}
+
+// An loop that goes through all the clases that have the name "weekday" and puts the data for that dat in the div.
+for (let i = 0; i <= 7; i++) {
+    // Get the temp of the day
+    let dailyTemp = data.daily[i].temp.day
+
+    // Get day's and put them in an array
+    let day = document.getElementsByClassName("weekday")
+    // Gets certain day
+    // example: monday
+    let dayelement = day[i]
+
+    let dayIcon = data.daily[i].weather[0].main
+
+    console.log(day[i])
+    console.log(getDayType(dayIcon))
+
+    // Outputs the stuff to the div
+    dayelement.innerHTML = `${daysInWeek[i]}<br> ${getDayType(dayIcon)} <br> ${dailyTempArray[i]}`
+}
+

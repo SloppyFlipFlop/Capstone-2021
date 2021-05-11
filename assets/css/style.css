@@ -39,4 +39,10 @@ body {
   height: fit-content;
   text-align: center;
 }
+
+.weeklyView .weekday svg {
+  color: white;
+  height: 100px !important;
+  width: 100px !important;
+}
 /*# sourceMappingURL=style.css.map */
