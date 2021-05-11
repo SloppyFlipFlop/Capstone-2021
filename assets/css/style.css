@@ -10,6 +10,29 @@ body {
   background-color: #72A0C1 !important;
 }
 
+body nav {
+  font-family: script-mj-bold;
+  background-color: #040404;
+  color: #fff;
+  position: relative;
+  background: transparent;
+}
+
+body nav::before {
+  content: "";
+  position: fixed;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+.navy {
+  background-color: #024759 !important;
+}
+
 .weeklyView {
   background-color: #356082;
   display: -webkit-box;
