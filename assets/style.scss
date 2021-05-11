@@ -42,6 +42,7 @@ body {
     background-color: #024759 !important;
 }
 
+// Weekly style
 
 .weeklyView {
     background-color: $blue;
@@ -59,6 +60,12 @@ body {
         height: fit-content;
         text-align: center;
         // line-height: 200%;
+        svg {
+            
+            color: white;
+            height: 100px !important;
+            width: 100px !important;
+        }
     }
 }
 
