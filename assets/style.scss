@@ -1,5 +1,6 @@
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -10,15 +11,15 @@ $blue: hsl(207, 42%, 36%);
 $borders: hsl(34, 100%, 75%);
 
 body {
-    background-color: #72A0C1 !important;
-    nav{
+    background-color: #72a0c1 !important;
+    nav {
         font-family: script-mj-bold;
         background-color: #040404;
         color: #fff;
         position: relative;
         background: transparent;
-    
-        &::before{
+
+        &::before {
             content: "";
             position: fixed;
             // background: #024759 top right no-repeat; //can place an image if you want
@@ -32,7 +33,7 @@ body {
     }
 }
 
-.navy{
+.navy {
     background-color: #024759 !important;
 }
 
@@ -41,26 +42,73 @@ body {
 .weeklyView {
     background-color: $blue;
     display: flex;
+    gap: 10px !important;
     flex-flow: row nowrap;
-    padding: 10px 50px;
-    justify-content: space-evenly;
+    padding: 25px 70px;
+    justify-content: space-between;
     border: 5px solid $borders;
     border-radius: 1rem;
-    margin-right: 500px;
-    margin-left: 500px;
+    // margin-right: 500px;
+    // margin-left: 500px;
     .weekday {
-        border: 1px solid $borders;
-        width: fit-content;
-        height: fit-content;
-        text-align: center;
-        // line-height: 200%;
+        // width: 100px;
+        border: 2px solid $borders;
+        border-right: 0;
+        border-left: 0;
+        &:hover{
+            animation: fadeSide 1s ease-out forwards;
+            @keyframes fadeSide {
+                to{
+                    border-right: 2px solid $borders;
+                    border-left: 2px solid $borders;
+                }
+            }
+        }
+        display: flex;
+        flex-flow: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        
+        // Weekday title styling
+        .title{
+            $fontColor: lightblue;
+            font-size: 20px;
+            font-family: 'Newsreader', serif;
+            font-weight: bold;
+            color: $fontColor;
+        }
+        p {
+            margin-bottom: 0;
+            // font styling
+            font-family: 'Newsreader', serif;
+            font-size: 25px;
+        }
         svg {
-            
             color: white;
-            height: 100px !important;
-            width: 100px !important;
+            animation: rotating 10s linear infinite;
+            
+            // Makes the icon spin where it is
+            transform-origin: center;
+            transform-box: fill-box;
         }
     }
 }
 
+// Animate for the rotate of the icons
+@keyframes rotating {
+    from{
+        transform: rotateZ(0deg);
+    }
 
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+// Styles for when the sreen is small ornot large
+@media only screen and (min-width: 992px) {
+    .weeklyView{
+        // padding: 0;
+        // gap: 0 !important;
+    }
+}
