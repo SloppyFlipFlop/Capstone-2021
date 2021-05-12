@@ -7,20 +7,24 @@
     box-sizing: border-box;
 }
 
-$blue: hsl(207, 42%, 36%);
-$borders: hsl(34, 100%, 75%);
+/* SCSS HSL */
+$jet: hsla(0, 0%, 21%, 1);
+$ming: hsla(183, 31%, 34%, 1);
+$white: hsla(0, 0%, 100%, 1);
+$gainsboro: hsla(0, 0%, 85%, 1);
+$indigo-dye: hsla(204, 42%, 27%, 1);
 
 body {
-    background-color: #72A0C1 !important;
+    background-color: #72a0c1 !important;
 
-    nav{
+    nav {
         //Hover Effect
-        li{
-            &:hover{
+        li {
+            &:hover {
                 border-bottom: 2px solid white;
             }
         }
-    
+
         // &::before{
         //     content: "";
         //     position: fixed;
@@ -36,34 +40,34 @@ body {
 }
 
 //Nav becomes navy
-.navy{
+.navy {
     background-color: #024759 !important;
 }
 
-
 // Weekly style
 .weeklyView {
-    background-color: $blue;
+    background-color: $indigo-dye;
     display: flex;
     gap: 10px !important;
     flex-flow: row nowrap;
     padding: 25px 70px;
     justify-content: space-between;
-    border: 5px solid $borders;
+    border: 5px solid $gainsboro;
     border-radius: 1rem;
     // margin-right: 500px;
     // margin-left: 500px;
     .weekday {
         // width: 100px;
-        border: 2px solid $borders;
-        border-right: 0;
+        border: 2px solid $gainsboro;
+        
         border-left: 0;
-        &:hover{
+        border-right: 0;
+        &:hover {
             animation: fadeSide 1s ease-out forwards;
             @keyframes fadeSide {
-                to{
-                    border-right: 2px solid $borders;
-                    border-left: 2px solid $borders;
+                to {
+                    border-right: 2px solid $gainsboro;
+                    border-left: 2px solid $gainsboro;
                 }
             }
         }
@@ -71,25 +75,26 @@ body {
         flex-flow: column;
         flex-wrap: nowrap;
         align-items: center;
-        
+
         // Weekday title styling
-        .title{
+        .title {
             $fontColor: lightblue;
             font-size: 20px;
-            font-family: 'Newsreader', serif;
+            font-family: "Newsreader", serif;
             font-weight: bold;
             color: $fontColor;
         }
         p {
             margin-bottom: 0;
             // font styling
-            font-family: 'Newsreader', serif;
+            font-family: "Newsreader", serif;
             font-size: 25px;
+            color: $gainsboro;
         }
         svg {
             color: white;
             animation: rotating 10s linear infinite;
-            
+
             // Makes the icon spin where it is
             transform-origin: center;
             transform-box: fill-box;
@@ -99,7 +104,7 @@ body {
 
 // Animate for the rotate of the icons
 @keyframes rotating {
-    from{
+    from {
         transform: rotateZ(0deg);
     }
 
@@ -110,7 +115,7 @@ body {
 
 // Styles for when the sreen is small ornot large
 @media only screen and (min-width: 992px) {
-    .weeklyView{
+    .weeklyView {
         // padding: 0;
         // gap: 0 !important;
     }

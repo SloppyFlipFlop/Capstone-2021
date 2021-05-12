@@ -8,8 +8,9 @@
           box-sizing: border-box;
 }
 
+/* SCSS HSL */
 body {
-  background-color: #72A0C1 !important;
+  background-color: #72a0c1 !important;
 }
 
 body nav li:hover {
@@ -21,7 +22,7 @@ body nav li:hover {
 }
 
 .weeklyView {
-  background-color: #356082;
+  background-color: #284b62;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,14 +35,14 @@ body nav li:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 5px solid #ffc880;
+  border: 5px solid #d9d9d9;
   border-radius: 1rem;
 }
 
 .weeklyView .weekday {
-  border: 2px solid #ffc880;
-  border-right: 0;
+  border: 2px solid #d9d9d9;
   border-left: 0;
+  border-right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,29 +64,30 @@ body nav li:hover {
 
 @-webkit-keyframes fadeSide {
   to {
-    border-right: 2px solid #ffc880;
-    border-left: 2px solid #ffc880;
+    border-right: 2px solid #d9d9d9;
+    border-left: 2px solid #d9d9d9;
   }
 }
 
 @keyframes fadeSide {
   to {
-    border-right: 2px solid #ffc880;
-    border-left: 2px solid #ffc880;
+    border-right: 2px solid #d9d9d9;
+    border-left: 2px solid #d9d9d9;
   }
 }
 
 .weeklyView .weekday .title {
   font-size: 20px;
-  font-family: 'Newsreader', serif;
+  font-family: "Newsreader", serif;
   font-weight: bold;
   color: lightblue;
 }
 
 .weeklyView .weekday p {
   margin-bottom: 0;
-  font-family: 'Newsreader', serif;
+  font-family: "Newsreader", serif;
   font-size: 25px;
+  color: #d9d9d9;
 }
 
 .weeklyView .weekday svg {
