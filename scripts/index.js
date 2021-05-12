@@ -1720,7 +1720,7 @@ const NightAndCloudyIcon = `<i class="bi bi-cloud-moon"></i>`
 
 
 // An array of all the days in the week
-let daysInWeek = ["Sunday", "Monday", "Tuesday", "Wensday", "Thusday", "Friday", "saturday"]
+let daysInWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
 function msToHMS(duration) {
 
