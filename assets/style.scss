@@ -8,41 +8,76 @@
 }
 
 /* SCSS HSL */
-$jet: hsla(0, 0%, 21%, 1);
-$ming: hsla(183, 31%, 34%, 1);
-$white: hsla(0, 0%, 100%, 1);
-$gainsboro: hsla(0, 0%, 85%, 1);
-$indigo-dye: hsla(204, 42%, 27%, 1);
+/* CSS HEX */
+
+$jet: #353535ff;
+$ming: #3c6e71ff;
+$white: #ffffffff;
+$gainsboro: #d9d9d9ff;
+$indigo-dye: #284b63ff;
 
 body {
-    background-color: #72a0c1 !important;
+    background-color: $ming !important;
+}
 
-    nav {
-        //Hover Effect
-        li {
-            &:hover {
-                border-bottom: 2px solid white;
-            }
+// David and Aj
+nav{
+    background-color: $indigo-dye;
+    color: black !important;
+    height: 100px;
+    button{
+        width: fit-content;
+        height: fit-content;
+        svg{
+            height: 50px;
+            width: 50px;
         }
-
-        // &::before{
-        //     content: "";
-        //     position: fixed;
-        //     // background: #024759 top right no-repeat; //can place an image if you want
-        //     background-size: cover;
-        //     left: 0;
-        //     right: 0;
-        //     top: 0;
-        //     height: 100vh;
-        //     z-index: -1;
-        // }
     }
 }
 
-//Nav becomes navy
-.navy {
-    background-color: #024759 !important;
-}
+// Nav styles
+// nav {
+//     background-color: $indigo-dye;
+//     color: black !important;
+//     div {
+//         a {
+//             color: lightblue;
+//             font-size: 25px;
+//             padding: 5px 50px 5px 70px;
+//             &:hover {
+//                 color: $white;
+//             }
+//         }
+//         div {
+//             ul {
+//                 display: flex;
+//                 justify-content: space-evenly;
+//                 width: 90%;
+//                 li {
+//                     display: flex;
+//                     justify-content: space-evenly;
+//                     a {
+//                         text-decoration: none;
+//                         color: $gainsboro;
+//                         font-size: 20px;
+//                     }
+//                     &:nth-child(1) {
+//                         padding: 10px;
+//                     }
+//                     input {
+//                         width: 200px !important;
+//                     }
+//                 }
+//                 // &:nth-child(1){
+//                 //     width: 1000px;
+//                 // }
+//                 // &:nth-child(2) {
+//                 //     width: 500px;
+//                 // }
+//             }
+//         }
+//     }
+// }
 
 // Weekly style
 .weeklyView {
@@ -59,11 +94,11 @@ body {
     .weekday {
         // width: 100px;
         border: 2px solid $gainsboro;
-        
+
         border-left: 0;
         border-right: 0;
         &:hover {
-            animation: fadeSide 1s ease-out forwards;
+            animation: fadeSide 300ms ease-out forwards;
             @keyframes fadeSide {
                 to {
                     border-right: 2px solid $gainsboro;
@@ -118,5 +153,41 @@ body {
     .weeklyView {
         // padding: 0;
         // gap: 0 !important;
+    }
+    nav {
+        background-color: $indigo-dye;
+        color: black !important;
+        div {
+            a {
+                color: lightblue;
+                font-size: 25px;
+                padding: 0 50px 0 70px;
+                &:hover {
+                    color: $white;
+                }
+            }
+            div {
+                ul {
+                    display: flex;
+                    justify-content: space-evenly;
+                    width: 90%;
+                    li {
+                        display: flex;
+                        justify-content: space-evenly;
+                        a {
+                            text-decoration: none;
+                            color: $gainsboro;
+                            font-size: 20px;
+                        }
+                        &:nth-child(1) {
+                            padding: 10px;
+                        }
+                        input {
+                            width: 200px !important;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
