@@ -145,33 +145,19 @@ nav button svg {
   nav div a {
     color: lightblue;
     font-size: 25px;
-    padding: 0 50px 0 70px;
   }
   nav div a:hover {
     color: #ffffffff;
-  }
-  nav div div ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    width: 90%;
-  }
-  nav div div ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    padding: 10px;
   }
   nav div div ul li a {
     text-decoration: none;
     color: #d9d9d9ff;
     font-size: 20px;
+    text-align: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    line-height: auto;
     display: inline-block;
     margin: 0;
     text-transform: uppercase;
@@ -190,15 +176,6 @@ nav button svg {
   nav div div ul li a:hover:after {
     -webkit-transform: scaleX(1);
             transform: scaleX(1);
-  }
-  nav div div ul li:nth-child(1) {
-    padding: 10px;
-  }
-  nav div div ul li input {
-    width: 200px !important;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
 }
 /*# sourceMappingURL=style.css.map */

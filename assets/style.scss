@@ -154,6 +154,7 @@ nav {
         // padding: 0;
         // gap: 0 !important;
     }
+    // Navbar styling
     nav {
         background-color: $indigo-dye;
         color: black !important;
@@ -162,7 +163,7 @@ nav {
             a {
                 color: lightblue;
                 font-size: 25px;
-                padding: 0 50px 0 70px;
+                // padding: 0 50px 0 70px;
 
                 &:hover {
                     color: $white;
@@ -170,18 +171,17 @@ nav {
             }
             div {
                 ul {
-                    display: flex;
-                    justify-content: space-evenly;
-                    width: 90%;
+                    // width: 90%;
                     li {
-                        display: flex;
-                        justify-content: space-evenly;
-                        padding: 10px;
+                        // padding: 10px;
                         a {
                             text-decoration: none;
                             color: $gainsboro;
                             font-size: 20px;
-                            
+                            text-align: center;
+                            width: fit-content;
+                            line-height: auto;
+
                             // hover effect styleing
                             display: inline-block;
                             margin: 0;
@@ -197,14 +197,13 @@ nav {
                                 transform: scaleX(1);
                             }
                         }
-                        &:nth-child(1) {
-                            padding: 10px;
-                            
-                        }
-                        input {
-                            width: 200px !important;
-                            height: fit-content;
-                        }
+                        // &:nth-child(1) {
+                        //     padding: 10px;
+                        // }
+                        // input {
+                        //     width: 200px !important;
+                        //     height: fit-content;
+                        // }
                     }
                 }
             }

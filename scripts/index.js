@@ -1781,11 +1781,11 @@ for (let i = 0; i <= 7; i++) {
 let dayArray = document.getElementsByClassName("weekday")
 
 
-// for (day in dayArray) {
-    dayArray.addEventListner("mouseover", (e) => {
-    console.log('test')
+for(let i = 0; i < dayArray.length; i++) {
+    dayArray[i].addEventListener("click", function (){
+        console.log('test')
     })
-// }
+}
 
 
 
