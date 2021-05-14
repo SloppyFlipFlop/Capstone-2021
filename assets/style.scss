@@ -21,14 +21,14 @@ body {
 }
 
 // David and Aj
-nav{
+nav {
     background-color: $indigo-dye;
     color: black !important;
     height: 100px;
-    button{
+    button {
         width: fit-content;
         height: fit-content;
-        svg{
+        svg {
             height: 50px;
             width: 50px;
         }
@@ -157,11 +157,13 @@ nav{
     nav {
         background-color: $indigo-dye;
         color: black !important;
+        height: fit-content;
         div {
             a {
                 color: lightblue;
                 font-size: 25px;
                 padding: 0 50px 0 70px;
+
                 &:hover {
                     color: $white;
                 }
@@ -174,16 +176,34 @@ nav{
                     li {
                         display: flex;
                         justify-content: space-evenly;
+                        padding: 10px;
                         a {
                             text-decoration: none;
                             color: $gainsboro;
                             font-size: 20px;
+                            
+                            // hover effect styleing
+                            display: inline-block;
+                            margin: 0;
+                            text-transform: uppercase;
+                            &:after {
+                                display: block;
+                                content: "";
+                                border-bottom: solid 3px $gainsboro;
+                                transform: scaleX(0);
+                                transition: transform 250ms ease-in-out;
+                            }
+                            &:hover:after {
+                                transform: scaleX(1);
+                            }
                         }
                         &:nth-child(1) {
                             padding: 10px;
+                            
                         }
                         input {
                             width: 200px !important;
+                            height: fit-content;
                         }
                     }
                 }
