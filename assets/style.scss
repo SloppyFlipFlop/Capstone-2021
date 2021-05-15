@@ -21,63 +21,15 @@ body {
 }
 
 // David and Aj
-nav {
-    background-color: $indigo-dye;
-    color: black !important;
-    height: 100px;
-    button {
-        width: fit-content;
-        height: fit-content;
-        svg {
-            height: 50px;
-            width: 50px;
+@media only screen and (max-width: 992px) {
+    nav {
+        div {
+            div {
+                background-color: $indigo-dye !important;
+            }
         }
     }
 }
-
-// Nav styles
-// nav {
-//     background-color: $indigo-dye;
-//     color: black !important;
-//     div {
-//         a {
-//             color: lightblue;
-//             font-size: 25px;
-//             padding: 5px 50px 5px 70px;
-//             &:hover {
-//                 color: $white;
-//             }
-//         }
-//         div {
-//             ul {
-//                 display: flex;
-//                 justify-content: space-evenly;
-//                 width: 90%;
-//                 li {
-//                     display: flex;
-//                     justify-content: space-evenly;
-//                     a {
-//                         text-decoration: none;
-//                         color: $gainsboro;
-//                         font-size: 20px;
-//                     }
-//                     &:nth-child(1) {
-//                         padding: 10px;
-//                     }
-//                     input {
-//                         width: 200px !important;
-//                     }
-//                 }
-//                 // &:nth-child(1){
-//                 //     width: 1000px;
-//                 // }
-//                 // &:nth-child(2) {
-//                 //     width: 500px;
-//                 // }
-//             }
-//         }
-//     }
-// }
 
 // Weekly style
 .weeklyView {
@@ -150,10 +102,6 @@ nav {
 
 // Styles for when the sreen is small ornot large
 @media only screen and (min-width: 992px) {
-    .weeklyView {
-        // padding: 0;
-        // gap: 0 !important;
-    }
     // Navbar styling
     nav {
         background-color: $indigo-dye;
@@ -177,17 +125,18 @@ nav {
                         a {
                             text-decoration: none;
                             color: $gainsboro;
-                            font-size: 20px;
-                            text-align: center;
-                            width: fit-content;
-                            line-height: auto;
+                            // font-size: 20px;
+                            // text-align: center;
+                            // width: fit-content;
+                            // line-height: 41px;
+                            // gap: 5px;
 
                             // hover effect styleing
-                            display: inline-block;
-                            margin: 0;
-                            text-transform: uppercase;
+                            // display: inline-block;
+                            // margin: 0;
+                            // text-transform: uppercase;
                             &:after {
-                                display: block;
+                                // display: block;
                                 content: "";
                                 border-bottom: solid 3px $gainsboro;
                                 transform: scaleX(0);
@@ -197,9 +146,10 @@ nav {
                                 transform: scaleX(1);
                             }
                         }
-                        // &:nth-child(1) {
-                        //     padding: 10px;
-                        // }
+                        &:nth-child(1) {
+                            // padding: 10px;
+                            gap: 5px;
+                        }
                         // input {
                         //     width: 200px !important;
                         //     height: fit-content;

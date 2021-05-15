@@ -14,6 +14,7 @@
 
     <link rel='stylesheet' href='assets/css/style.css'>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/theme_1621040455155.css">
 
     <link rel='shortcut icon' href='MyCustomFavicon.png' type='image/x-icon'>
 </head>
@@ -22,40 +23,57 @@
 
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navy ">
-        <div class="container-fluid row ">
-
-            <a href="index.html" class="navbar-brand m-0 col-3">WeatherWizdm</a>
-
-            <button class="text-white bg-secondary navbar-toggler col-4" type="button" data-bs-toggle='collapse'
-                data-bs-target="#navbarSupportedContent" aria-expanded='false' aria-label="Toggle Navigation">
-                <!-- ~~~ -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
-                    viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                </svg>
-                <!-- ~~~ -->
+        <div class="container-fluid row">
+            <a href="index.html" class="navbar-brand m-0 col-lg-3 col-4">WeatherWizdm</a>
+            
+            <button class="bg-dark text-white navbar-toggler col-4 "style="width: fit-content;" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon d-inline-block h-100 w-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g fill='#FFFFFF'>
+                            <path
+                                d="M19 14H5c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2s-.9 2-2 2zM19 7H5c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2s-.9 2-2 2zM19 21H5c-1.1 0-2-.9-2-2s.9-2 2-2h14c1.1 0 2 .9 2 2s-.9 2-2 2z">
+                            </path>
+                        </g>
+                    </svg>
+                </span>
             </button>
 
-
-            <div class="collapse navbar-collapse col-9 justify-content-end d-flex" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0 d-flex row w-lg-100">
-                    <li class="nav-item  col-lg-6 d-flex justify-content-between">
-                        <a class="col-lg-4" style="line-height: 38px;" href="#Minutely" aria-current='page'>Minutely</a>
-                        <a class="col-lg-4" style="line-height: 38px;" href="#hourly">Hourly</a>
-                        <a class="col-lg-4" style="line-height: 38px;" href="#hourly">Daily</a>
+            <!-- col-9 justify-content-lg-end d-lg-flex -->
+            <div class="collapse navbar-collapse bg-secondary" id="navbarSupportedContent">
+                <!-- mb-lg-2 mb-0 d-lg-flex row w-lg-100 -->
+                <ul class="navbar-nav ">
+                    <!-- col-lg-6 d-lg-flex justify-content-lg-around p-2  -->
+                    <li class="nav-item p-2">
+                        <!-- col-lg-4 row -->
+                        <a class="row" style="line-height: 38px; width: fit-content;" href="#Minutely"
+                            aria-current='page'>Minutely</a>
+                            <!-- col-lg-4 row -->
+                        <a class="row" style="line-height: 38px; width: fit-content;" href="#hourly">Hourly</a>
+                        <!-- col-lg-4 row -->
+                        <a class="row" style="line-height: 38px; width: fit-content;" href="#hourly">Daily</a>
                     </li>
-                    <li class="nav-item col-lg-6">
-                        <form action="#" class="d-flex justify-content-end ">
+                    <!-- col-lg-6 -->
+                    <li class="nav-item ">
+                        <!-- d-lg-flex justify-content-lg-end p-lg-2 row -->
+                        <form action="#" class="row"  style="">
+                            <!-- me-lg-2 w-lg-50 col-10 w-75 w-lg-0 -->
                             <input type="search" placeholder="Search" aria-label="Search"
-                                class="form-control me-2 w-lg-50 ">
-                            <button class=" btn btn-outline-secondary" type="submit">Search</button>
+                                class="col-9">
+                                <!-- col-2 col-lg-0 -->
+                            <button class=" btn btn-outline-secondary col-3" type="submit">Search</button>
                         </form>
                     </li>
                 </ul>
             </div>
+
+            
         </div>
     </nav>
+
+
+
+    
     <!-- /NavBar -->
 
     <!-- Week View Area -->
@@ -87,6 +105,7 @@
     </div>
     <!-- /Week View Area -->
 
+    
     <script src="./node_modules/jQuery/lib/node-jquery.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src='./scripts/index.js'></script>
