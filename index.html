@@ -10,13 +10,13 @@
     <meta property='og.title' content='O mighty T'>
     <meta property='og.description' content='Just a mighty T'>
 
-    <title>Basic Website</title>
+    <title>Weather Wisdom</title>
 
     <link rel='stylesheet' href='assets/css/style.css'>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/theme_1621040455155.css">
 
-    <link rel='shortcut icon' href='MyCustomFavicon.png' type='image/x-icon'>
+    <link rel='shortcut icon' href='./assets/images/Whitecloud.png' type='image/x-icon'>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navy ">
         <div class="container-fluid row">
-            <a href="index.html" class="navbar-brand m-0 col-lg-3 col-4">WeatherWizdm</a>
+            <a href="index.html" class="navbar-brand m-0 col-lg-3 col-4">WeatherWizDM</a>
             
             <button class="bg-dark text-white navbar-toggler col-4 "style="width: fit-content;" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
@@ -75,7 +75,27 @@
 
     
     <!-- /NavBar -->
+<!-- Daily Temp -->
 
+<div class="container">
+		<div class="col-sm-3 col-md-2">
+			<div class="progress" data-percentage="80">
+				<span class="progress-left">
+					<span class="progress-bar"></span>
+				</span>
+				<span class="progress-right">
+					<span class="progress-bar"></span>
+				</span>
+				<div class="progress-value">
+					<div id="currenttemp">
+						80&deg;
+					</div>
+				</div>
+			</div>
+		</div>	
+
+</div>
+<!-- /Daily Temp -->
     <!-- Week View Area -->
     <div class="container">
         <div class=" weeklyView p-0 p-lg-5 row align-items-center" id="week">
@@ -105,7 +125,40 @@
     </div>
     <!-- /Week View Area -->
 
-    
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark text-white pt-4 mt-4">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase">Footer Title</h5>
+                    <p>This is where the footer actually goes</p>
+                </div>
+
+                <hr class="clearfix w-100 pb-3 d-md-none">
+
+                <div class="col-md-3 mt-md-0 mt-3">
+                    <h5 class="text-uppercase">Things to Link</h5>
+
+                    <div class="list-group">
+                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 1</a>
+                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 2</a>
+                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 3</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mt-md-0 mt-3">
+                        <h5 class="text-uppercase">More Links</h5>
+                    <div class="list-group">
+                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 4</a>
+                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 5</a>
+                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 6</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->    
     <script src="./node_modules/jQuery/lib/node-jquery.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src='./scripts/index.js'></script>

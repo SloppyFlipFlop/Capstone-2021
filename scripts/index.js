@@ -1697,6 +1697,14 @@ let data = {
     ]
 }
 
+
+
+// Temperature get current, timezone, feels like:
+
+let temp = Math.round(data.current.temp);
+
+document.getElementById("currenttemp").innerHTML = `${temp}&deg`
+
 // Get the Current Degrees, Time Zone, Feels Like
 
 // 16
