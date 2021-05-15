@@ -10,84 +10,137 @@
     <meta property='og.title' content='O mighty T'>
     <meta property='og.description' content='Just a mighty T'>
 
-    <title>Basic Website</title>
+    <title>Weather Wisdom</title>
 
     <link rel='stylesheet' href='assets/css/style.css'>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
 
-    <link rel='shortcut icon' href='MyCustomFavicon.png' type='image/x-icon'>
+    <link rel='shortcut icon' href='./assets/images/Whitecloud.png' type='image/x-icon'>
 </head>
 
 <body>
 
-        <!-- NavBar -->
-        <nav class="navbar navbar-expand-lg navy text-white">
-            <div class="container-fluid">
-                <a href="#" class="navbar-brand text-white mb-0 h1">WeatherWizdm</a>
-                <button class="bg-dark text-white navbar-toggler" type="button" data-bs-toggle='collapse' data-bs-target="#navbarSupportedContent" aria-expanded='false' aria-label="Toggle Navigation"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navy ">
+        <div class="container-fluid row ">
+
+            <a href="index.html" class="navbar-brand m-0 col-3">WeatherWizDM</a>
+
+            <button class="text-white bg-secondary navbar-toggler col-4" type="button" data-bs-toggle='collapse'
+                data-bs-target="#navbarSupportedContent" aria-expanded='false' aria-label="Toggle Navigation">
+                <!-- ~~~ -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                 </svg>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a href="#Minutely" aria-current='page' class="nav-link active text-white">Minutely</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#hourly" class="nav-link text-white">Hourly</a>
-                        </li>
-                    </ul>
-    
-                    <form action="#" class="d-flex">
-                        <input type="search" placeholder="Search" aria-label="Search" class="form-control me-2">
-                        <button class="navy text-white btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
+                <!-- ~~~ -->
+            </button>
+
+
+            <div class="collapse navbar-collapse col-9 justify-content-end d-flex" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 d-flex row w-lg-100">
+                    <li class="nav-item  col-lg-6 d-flex justify-content-between">
+                        <a class="col-lg-4" style="line-height: 38px;" href="#Minutely" aria-current='page'>Minutely</a>
+                        <a class="col-lg-4" style="line-height: 38px;" href="#hourly">Hourly</a>
+                        <a class="col-lg-4" style="line-height: 38px;" href="#hourly">Daily</a>
+                    </li>
+                    <li class="nav-item col-lg-6">
+                        <form action="#" class="d-flex justify-content-end ">
+                            <input type="search" placeholder="Search" aria-label="Search"
+                                class="form-control me-2 w-lg-50 ">
+                            <button class=" btn btn-outline-secondary" type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
             </div>
-        </nav>
-        <!-- /NavBar -->
+        </div>
+    </nav>
+    <!-- /NavBar -->
+<!-- Daily Temp -->
 
+<div class="container">
+		<div class="col-sm-3 col-md-2">
+			<div class="progress" data-percentage="80">
+				<span class="progress-left">
+					<span class="progress-bar"></span>
+				</span>
+				<span class="progress-right">
+					<span class="progress-bar"></span>
+				</span>
+				<div class="progress-value">
+					<div id="currenttemp">
+						80&deg;
+					</div>
+				</div>
+			</div>
+		</div>	
 
-    <!-- <div class="weeklyView">
-        <div class="weekday" id="weekday-1"></div>
-        <div class="weekday" id="weekday-2"></div>
-        <div class="weekday" id="weekday-3"></div>
-        <div class="weekday" id="weekday-4"></div>
-        <div class="weekday" id="weekday-5"></div>
-        <div class="weekday" id="weekday-6"></div>
-        <div class="weekday" id="weekday-7"></div>
-    </div> -->
-
+</div>
+<!-- /Daily Temp -->
+    <!-- Week View Area -->
     <div class="container">
-        <div class=" weeklyView row align-items-center" id="week">
-            <div class="weekday col" id="weekday-1">
-                One of three columns
+        <div class=" weeklyView p-0 p-lg-5 row align-items-center" id="week">
+
+            <div class="weekday col-lg-12" id="weekday-1">
+                ;/
             </div>
-            <div class="weekday col" id="weekday-2">
-                One of three columns
+            <div class="weekday col-lg" id="weekday-2">
+                :O
             </div>
-            <div class="weekday col" id="weekday-3">
-                One of three columns
+            <div class="weekday col-lg" id="weekday-3">
+                @~@
             </div>
-            <div class="weekday col" id="weekday-4">
-                One of three columns
+            <div class="weekday col-lg" id="weekday-4">
+                dc
             </div>
-            <div class="weekday col" id="weekday-5">
-                One of three columns
+            <div class="weekday col-lg" id="weekday-5">
+                cdc
             </div>
-            <div class="weekday col" id="weekday-6">
-                One of three columns
+            <div class="weekday col-lg" id="weekday-6">
+                cd
             </div>
-            <div class="weekday col" id="weekday-7">
-                One of three columns
+            <div class="weekday col-lg" id="weekday-7">
+                dc
             </div>
         </div>
     </div>
+    <!-- /Week View Area -->
 
-    <footer class="footer footer-expand-lg navy text-white">
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-dark text-white pt-4 mt-4">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase">Footer Title</h5>
+                    <p>This is where the footer actually goes</p>
+                </div>
 
+                <hr class="clearfix w-100 pb-3 d-md-none">
+
+                <div class="col-md-3 mt-md-0 mt-3">
+                    <h5 class="text-uppercase">Things to Link</h5>
+
+                    <div class="list-group">
+                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 1</a>
+                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 2</a>
+                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 3</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mt-md-0 mt-3">
+                        <h5 class="text-uppercase">More Links</h5>
+                    <div class="list-group">
+                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 4</a>
+                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 5</a>
+                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 6</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </footer>
-    
+    <!-- /Footer -->    
     <script src="./node_modules/jQuery/lib/node-jquery.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src='./scripts/index.js'></script>
