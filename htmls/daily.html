@@ -10,21 +10,20 @@
     <meta property='og.title' content='O mighty T'>
     <meta property='og.description' content='Just a mighty T'>
 
-    <title>Weather Wisdom</title>
+    <title>Basic Website</title>
 
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/theme_1621040455155.css">
+    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../assets/css/daily.css">
 
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/theme_1621040455155.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel='stylesheet' href='assets/css/style.css'>
-
-    <link rel='shortcut icon' href='./assets/images/favicon.svg' type='image/x-icon'>
+    <link rel='shortcut icon' href='MyCustomFavicon.png' type='image/x-icon'>
 </head>
 
 <body>
 
     <!-- NavBar -->
     <!-- Credit: David and Aj -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" style="color: #1190cb;" href="#">
                 <!-- <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> -->
@@ -42,10 +41,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./htmls/daily.html">Daily</a>
+                        <a class="nav-link" href="#">Daily</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Hourly</a>
@@ -63,123 +62,38 @@
     </nav>
     <!-- /NavBar -->
 
+    <!-- Chart -->
 
-    <!-- Daily Temp -->
-
-    <!-- Credit: David and Kevin -->
-
-    <div class="container py-5">
-        <div class="row">
-
-            <div class="col-lg-12 mb-4">
-                <div class="bg-white rounded-lg p-5 shadow">
-                    <h2 class="h6 font-weight-bold text-center mb-4">Today's Weather</h2>
-
-                    <!-- Progress bar 1 -->
-
-                    <progress-ring class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center" stroke="4" radius="60" progress="0">
-                    </progress-ring>
-
-                    <!-- END -->
-
-                    <!-- Today's high and low info -->
-                    <div class="row text-center mt-4">
-                        <div class="col-6 border-right">
-                            <div class="h4 font-weight-bold mb-0" id="todaysHigh">28%</div>
-                            <span class="small text-gray">Feels Like</span>
-                        </div>
-                        <div class="col-6">
-                            <div class="h4 font-weight-bold mb-0" id="todaysLow">
-                                60%
-                            </div>
-                            <span class="small text-gray" id="timeTitle">
-                                Last updated
-                            </span>
-                        </div>
-                    </div>
-                    <!-- END -->
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <!-- /Daily Temp -->
-
-
-
-    <!-- Week View Area -->
     <!-- Credit: David -->
 
-    <div class="container pb-5">
+    <section class="container">
         <div class="row">
-            <div class="col-lg-12 mb-4">
-                <div class="bg-white rounded-lg p-5 shadow row">
-                    <div class="col-12 col-md-6 col-lg-12 ml-2 ml-md-0 weekday">1</div>
-                    <div class="col-lg col-md-3 ml-2 ml-md-0 weekday">2</div>
-                    <div class="col-lg col-md-3 ml-2 ml-md-0 weekday">3</div>
-                    <div class="col-lg col-md-3 ml-2 ml-md-0 weekday">4</div>
-                    <div class="col-lg col-md-3 ml-2 ml-md-0 weekday">5</div>
-                    <div class="col-lg col-md-3 ml-2 ml-md-0 weekday">6</div>
-                    <div class="col-lg col-md-3 ml-2 ml-md-0 weekday">7</div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!-- /Week View Area -->
-
-
-
-
-
-    <!-- Footer -->
-    <!-- Credit: AJ -->
-    <footer class="page-footer font-small bg-dark text-white pt-4 mt-4">
-        <div class="container text-center text-md-left">
             <div class="row">
-                <div class="col-md-6 mt-md-0 mt-3">
-                    <h5 class="text-uppercase">Footer Title</h5>
-                    <p>This is where the footer actually goes</p>
-                </div>
-
-                <hr class="clearfix w-100 pb-3 d-md-none">
-
-                <div class="col-md-3 mt-md-0 mt-3">
-                    <h5 class="text-uppercase">Things to Link</h5>
-
-                    <div class="list-group">
-                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 1</a>
-                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 2</a>
-                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 3</a>
-                    </div>
-                </div>
-
-                <div class="col-md-3 mt-md-0 mt-3">
-                    <h5 class="text-uppercase">More Links</h5>
-                    <div class="list-group">
-                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 4</a>
-                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 5</a>
-                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 6</a>
-                    </div>
-                </div>
-
+                <h3 class="title col-12 text-center">
+                    Weekly Weather Data
+                </h3>
+                <canvas id="myGraph"></canvas>
             </div>
         </div>
-    </footer>
-    <!-- /Footer -->
+    </section>
 
 
-    <script src="./node_modules/jQuery/lib/node-jquery.js"></script>
-    <!-- Had to use CDN because Npm wasn't working -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src='./scripts/index.js'></script>
+
+
+    <!-- /Chart -->
+
+
+
+    <script src="./../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Using chart.js CDN because couldn't install npm -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- CHart.js CDN -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <script src="./../scripts/data.js"></script>
+    <script src="./../scripts/daily.js"></script>
+
 </body>
 
 </html>
-
-
-<!-- Website used to make logo and favicon -->
-<!-- https://studio.tailorbrands.com/ -->

@@ -20,6 +20,43 @@ nav a svg {
   width: 50px;
 }
 
+#weekdayWrapper {
+  gap: 5px;
+  background-color: #f3f304;
+}
+
+#weekdayWrapper #sunday {
+  border-right: 2px solid lightblue;
+  border-left: 2px solid lightblue;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+#weekdayWrapper #sunday:hover {
+  -webkit-transition: all ease-in-out;
+  transition: all ease-in-out;
+  -webkit-box-shadow: 2px 2px 2px 2px lightblue, -2px -2px 2px 2px lightblue;
+          box-shadow: 2px 2px 2px 2px lightblue, -2px -2px 2px 2px lightblue;
+}
+
+#weekdayWrapper #notSunday {
+  border-top: 2px solid lightblue;
+  border-bottom: 2px solid lightblue;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+#weekdayWrapper #notSunday:hover {
+  -webkit-transition: all ease-in-out;
+  transition: all ease-in-out;
+  -webkit-box-shadow: 2px 2px 2px 2px lightblue, -2px -2px 2px 2px lightblue;
+          box-shadow: 2px 2px 2px 2px lightblue, -2px -2px 2px 2px lightblue;
+}
+
 .weekday {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -45,6 +82,9 @@ nav a svg {
 }
 
 @media (min-width: 768px) {
+  #weekdayWrapper {
+    gap: 0px;
+  }
   .weekday {
     display: -webkit-box;
     display: -ms-flexbox;

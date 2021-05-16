@@ -37,6 +37,37 @@ nav {
 }
 
 // Weekly style
+#weekdayWrapper {
+    gap: 5px;
+    #sunday {
+        border-right: 2px solid lightblue;
+        border-left: 2px solid lightblue;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        &:hover {
+            // background-color: hotpink;
+            transition: all ease-in-out;
+            box-shadow: 2px 2px 2px 2px lightblue, -2px -2px 2px 2px lightblue;
+        }
+    }
+    #notSunday {
+        border-top: 2px solid lightblue;
+        border-bottom: 2px solid lightblue;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        // padding: 5px;
+        &:hover {
+            // background-color: hotpink;
+            transition: all ease-in-out;
+            box-shadow: 2px 2px 2px 2px lightblue, -2px -2px 2px 2px lightblue;
+        }
+    }
+}
+
 .weekday {
     display: flex;
     flex-flow: row;
@@ -56,8 +87,11 @@ nav {
     }
 }
 
-// }
+// For m
 @media (min-width: 768px) {
+    #weekdayWrapper {
+        gap: 0px;
+    }
     .weekday {
         display: flex;
         justify-content: space-evenly;
