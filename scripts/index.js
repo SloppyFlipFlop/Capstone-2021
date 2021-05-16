@@ -1,5 +1,4 @@
-
-// All Javascript was made by David Nevarez
+// All Javascript was made by David
 
 let data = {
     "lat": 33.53,
@@ -20,17 +19,14 @@ let data = {
         "visibility": 10000,
         "wind_speed": 14.97,
         "wind_deg": 230,
-        "weather": [
-            {
-                "id": 800,
-                "main": "Clear",
-                "description": "clear sky",
-                "icon": "01n"
-            }
-        ]
+        "weather": [{
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01n"
+        }]
     },
-    "minutely": [
-        {
+    "minutely": [{
             "dt": 1620014880,
             "precipitation": 0
         },
@@ -275,8 +271,7 @@ let data = {
             "precipitation": 0
         }
     ],
-    "hourly": [
-        {
+    "hourly": [{
             "dt": 1620014400,
             "temp": 80.82,
             "feels_like": 78.91,
@@ -289,14 +284,12 @@ let data = {
             "wind_speed": 17.05,
             "wind_deg": 220,
             "wind_gust": 26.87,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01n"
+            }],
             "pop": 0
         },
         {
@@ -312,14 +305,12 @@ let data = {
             "wind_speed": 21.3,
             "wind_deg": 214,
             "wind_gust": 32.97,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01n"
+            }],
             "pop": 0
         },
         {
@@ -335,14 +326,12 @@ let data = {
             "wind_speed": 22.5,
             "wind_deg": 222,
             "wind_gust": 34.05,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01n"
+            }],
             "pop": 0
         },
         {
@@ -358,14 +347,12 @@ let data = {
             "wind_speed": 19.91,
             "wind_deg": 225,
             "wind_gust": 31.59,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01n"
+            }],
             "pop": 0
         },
         {
@@ -381,14 +368,12 @@ let data = {
             "wind_speed": 13.71,
             "wind_deg": 226,
             "wind_gust": 25.48,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01n"
+            }],
             "pop": 0
         },
         {
@@ -404,14 +389,12 @@ let data = {
             "wind_speed": 8.05,
             "wind_deg": 202,
             "wind_gust": 15.3,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01n"
+            }],
             "pop": 0
         },
         {
@@ -427,14 +410,12 @@ let data = {
             "wind_speed": 7.67,
             "wind_deg": 195,
             "wind_gust": 12.01,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01n"
+            }],
             "pop": 0
         },
         {
@@ -450,14 +431,12 @@ let data = {
             "wind_speed": 7.85,
             "wind_deg": 204,
             "wind_gust": 11.65,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01n"
+            }],
             "pop": 0
         },
         {
@@ -473,14 +452,12 @@ let data = {
             "wind_speed": 6.22,
             "wind_deg": 214,
             "wind_gust": 11.01,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01n"
+            }],
             "pop": 0
         },
         {
@@ -496,14 +473,12 @@ let data = {
             "wind_speed": 6.38,
             "wind_deg": 203,
             "wind_gust": 10.85,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -519,14 +494,12 @@ let data = {
             "wind_speed": 5.66,
             "wind_deg": 208,
             "wind_gust": 9.17,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -542,14 +515,12 @@ let data = {
             "wind_speed": 3.76,
             "wind_deg": 225,
             "wind_gust": 6.6,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -565,14 +536,12 @@ let data = {
             "wind_speed": 4.14,
             "wind_deg": 203,
             "wind_gust": 6.26,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -588,14 +557,12 @@ let data = {
             "wind_speed": 4.7,
             "wind_deg": 210,
             "wind_gust": 5.79,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -611,14 +578,12 @@ let data = {
             "wind_speed": 4.56,
             "wind_deg": 237,
             "wind_gust": 5.57,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -634,14 +599,12 @@ let data = {
             "wind_speed": 3.36,
             "wind_deg": 286,
             "wind_gust": 4.97,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -657,14 +620,12 @@ let data = {
             "wind_speed": 4.47,
             "wind_deg": 313,
             "wind_gust": 7.56,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -680,14 +641,12 @@ let data = {
             "wind_speed": 4.38,
             "wind_deg": 322,
             "wind_gust": 9.13,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -703,14 +662,12 @@ let data = {
             "wind_speed": 2.66,
             "wind_deg": 306,
             "wind_gust": 10.54,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -726,14 +683,12 @@ let data = {
             "wind_speed": 3.74,
             "wind_deg": 207,
             "wind_gust": 11.65,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -749,14 +704,12 @@ let data = {
             "wind_speed": 6.73,
             "wind_deg": 212,
             "wind_gust": 11.99,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -772,14 +725,12 @@ let data = {
             "wind_speed": 8.03,
             "wind_deg": 245,
             "wind_gust": 11.14,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -795,14 +746,12 @@ let data = {
             "wind_speed": 9.53,
             "wind_deg": 259,
             "wind_gust": 11.63,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -818,14 +767,12 @@ let data = {
             "wind_speed": 8.16,
             "wind_deg": 250,
             "wind_gust": 12.1,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01n"
+            }],
             "pop": 0
         },
         {
@@ -841,14 +788,12 @@ let data = {
             "wind_speed": 6.02,
             "wind_deg": 250,
             "wind_gust": 10.96,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01n"
+            }],
             "pop": 0
         },
         {
@@ -864,14 +809,12 @@ let data = {
             "wind_speed": 5.37,
             "wind_deg": 241,
             "wind_gust": 10.38,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01n"
+            }],
             "pop": 0
         },
         {
@@ -887,14 +830,12 @@ let data = {
             "wind_speed": 6.33,
             "wind_deg": 215,
             "wind_gust": 9.48,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01n"
+            }],
             "pop": 0
         },
         {
@@ -910,14 +851,12 @@ let data = {
             "wind_speed": 6.29,
             "wind_deg": 215,
             "wind_gust": 8.9,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01n"
+            }],
             "pop": 0
         },
         {
@@ -933,14 +872,12 @@ let data = {
             "wind_speed": 6.67,
             "wind_deg": 216,
             "wind_gust": 10.49,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01n"
+            }],
             "pop": 0
         },
         {
@@ -956,14 +893,12 @@ let data = {
             "wind_speed": 5.06,
             "wind_deg": 217,
             "wind_gust": 9.22,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01n"
+            }],
             "pop": 0
         },
         {
@@ -979,14 +914,12 @@ let data = {
             "wind_speed": 3.44,
             "wind_deg": 216,
             "wind_gust": 6.76,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01n"
+            }],
             "pop": 0
         },
         {
@@ -1002,14 +935,12 @@ let data = {
             "wind_speed": 2.26,
             "wind_deg": 195,
             "wind_gust": 5.08,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01n"
+            }],
             "pop": 0
         },
         {
@@ -1025,14 +956,12 @@ let data = {
             "wind_speed": 2.44,
             "wind_deg": 142,
             "wind_gust": 4.76,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01n"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01n"
+            }],
             "pop": 0
         },
         {
@@ -1048,14 +977,12 @@ let data = {
             "wind_speed": 3.4,
             "wind_deg": 145,
             "wind_gust": 5.84,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -1071,14 +998,12 @@ let data = {
             "wind_speed": 3.53,
             "wind_deg": 136,
             "wind_gust": 5.23,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -1094,14 +1019,12 @@ let data = {
             "wind_speed": 4.14,
             "wind_deg": 120,
             "wind_gust": 5.19,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -1117,14 +1040,12 @@ let data = {
             "wind_speed": 4.56,
             "wind_deg": 125,
             "wind_gust": 4.9,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -1140,14 +1061,12 @@ let data = {
             "wind_speed": 4.29,
             "wind_deg": 144,
             "wind_gust": 4.88,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -1163,14 +1082,12 @@ let data = {
             "wind_speed": 3.49,
             "wind_deg": 176,
             "wind_gust": 5.64,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -1186,14 +1103,12 @@ let data = {
             "wind_speed": 3.96,
             "wind_deg": 208,
             "wind_gust": 7.72,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -1209,14 +1124,12 @@ let data = {
             "wind_speed": 4.99,
             "wind_deg": 230,
             "wind_gust": 8.43,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -1232,14 +1145,12 @@ let data = {
             "wind_speed": 5.99,
             "wind_deg": 244,
             "wind_gust": 8.43,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -1255,14 +1166,12 @@ let data = {
             "wind_speed": 6.89,
             "wind_deg": 248,
             "wind_gust": 8.5,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -1278,14 +1187,12 @@ let data = {
             "wind_speed": 7.16,
             "wind_deg": 251,
             "wind_gust": 8.48,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -1301,14 +1208,12 @@ let data = {
             "wind_speed": 7.16,
             "wind_deg": 250,
             "wind_gust": 7.78,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -1324,14 +1229,12 @@ let data = {
             "wind_speed": 8.21,
             "wind_deg": 247,
             "wind_gust": 7.85,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -1347,14 +1250,12 @@ let data = {
             "wind_speed": 8.86,
             "wind_deg": 242,
             "wind_gust": 8.05,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "pop": 0
         },
         {
@@ -1370,19 +1271,16 @@ let data = {
             "wind_speed": 7.78,
             "wind_deg": 235,
             "wind_gust": 9.15,
-            "weather": [
-                {
-                    "id": 801,
-                    "main": "Clouds",
-                    "description": "few clouds",
-                    "icon": "02n"
-                }
-            ],
+            "weather": [{
+                "id": 801,
+                "main": "Clouds",
+                "description": "few clouds",
+                "icon": "02n"
+            }],
             "pop": 0
         }
     ],
-    "daily": [
-        {
+    "daily": [{
             "dt": 1619982000,
             "sunrise": 1619959135,
             "sunset": 1620007935,
@@ -1409,14 +1307,12 @@ let data = {
             "wind_speed": 22.5,
             "wind_deg": 222,
             "wind_gust": 34.05,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "clouds": 0,
             "pop": 0,
             "uvi": 9.36
@@ -1448,14 +1344,12 @@ let data = {
             "wind_speed": 19.91,
             "wind_deg": 225,
             "wind_gust": 31.59,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "clouds": 0,
             "pop": 0,
             "uvi": 9.13
@@ -1487,14 +1381,12 @@ let data = {
             "wind_speed": 10.09,
             "wind_deg": 267,
             "wind_gust": 18.81,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "clouds": 5,
             "pop": 0,
             "uvi": 9.99
@@ -1526,14 +1418,12 @@ let data = {
             "wind_speed": 6.91,
             "wind_deg": 278,
             "wind_gust": 13.38,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "clouds": 1,
             "pop": 0,
             "uvi": 9.86
@@ -1565,14 +1455,12 @@ let data = {
             "wind_speed": 12.8,
             "wind_deg": 250,
             "wind_gust": 20.36,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "clouds": 1,
             "pop": 0,
             "uvi": 9.78
@@ -1604,14 +1492,12 @@ let data = {
             "wind_speed": 17.09,
             "wind_deg": 229,
             "wind_gust": 22.32,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "clouds": 1,
             "pop": 0,
             "uvi": 10
@@ -1643,14 +1529,12 @@ let data = {
             "wind_speed": 19.73,
             "wind_deg": 222,
             "wind_gust": 24.16,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "clouds": 0,
             "pop": 0,
             "uvi": 10
@@ -1682,14 +1566,12 @@ let data = {
             "wind_speed": 20.87,
             "wind_deg": 204,
             "wind_gust": 24.65,
-            "weather": [
-                {
-                    "id": 800,
-                    "main": "Clear",
-                    "description": "clear sky",
-                    "icon": "01d"
-                }
-            ],
+            "weather": [{
+                "id": 800,
+                "main": "Clear",
+                "description": "clear sky",
+                "icon": "01d"
+            }],
             "clouds": 0,
             "pop": 0,
             "uvi": 10
@@ -1703,16 +1585,14 @@ let data = {
 
 let temp = Math.round(data.current.temp);
 
-document.getElementById("currenttemp").innerHTML = `${temp}&deg`
+// document.getElementById("currenttemp").innerHTML = `${temp}&deg`
 
 // Get the Current Degrees, Time Zone, Feels Like
 
 // 16
-// Sun icon
-const sunnyIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+const sunnyIcon = `<svg class="" xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
 <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
 </svg>`
-
 
 // cloud
 const cloudyIcon = `<i class="bi bi-brightness-high"></i>`
@@ -1736,16 +1616,30 @@ let daysInWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Frida
 
 function msToHMS(duration) {
 
+    let isPM = false
+
     var milliseconds = parseInt((duration % 1000) / 100),
-        seconds = parseInt((duration / 1000) % 60),
+        // seconds = parseInt((duration / 1000) % 60),
         minutes = parseInt((duration / (1000 * 60)) % 60),
         hours = parseInt((duration / (1000 * 60 * 60)) % 24);
 
     hours = (hours < 10) ? "0" + hours : hours;
     minutes = (minutes < 10) ? "0" + minutes : minutes;
-    seconds = (seconds < 10) ? "0" + seconds : seconds;
+    // seconds = (seconds < 10) ? "0" + seconds : seconds;
 
-    return hours + ":" + minutes + ":" + seconds;
+
+    if (hours > 12) {
+        hours = hours - 12
+        isPM = true
+    }
+
+    if (isPM == true) {
+        return `${hours}:${minutes} PM`
+
+    } else {
+        return `${hours}:${minutes} AM`
+    }
+
 }
 
 // An array that will hold all the temps of the day to be be used later
@@ -1765,36 +1659,187 @@ const getDayType = (currentDay) => {
 }
 
 // An loop that goes through all the clases that have the name "weekday" and puts the data for that dat in the div.
-for (let i = 0; i <= 7; i++) {
+for (let i = 0; i < 7; i++) {
     // Get the temp of the day
     let dailyTemp = data.daily[i].temp.day
 
     // Get day's and put them in an array
     let day = document.getElementsByClassName("weekday")
-    // Gets certain day
-    // example: monday
+        // Gets certain day
+        // example: monday
+
     let dayelement = day[i]
 
     let dayIcon = data.daily[i].weather[0].main
 
     // console.log(day[i])
+    // console.log(daysInWeek[i])
     // console.log(getDayType(dayIcon))
+    // console.log(dailyTempArray[i])
 
-    // Outputs the stuff to the div
-    dayelement.innerHTML = `<p class="title">${daysInWeek[i]}</p> <br> ${getDayType(dayIcon)} <br> <p>${dailyTempArray[i]}</p>`
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // Sun icon
+    const sunnyIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+    </svg>`
 
+    // Outputs the stuff to the div's
+    dayelement.innerHTML = `<div class="title col-6 text-center" style='color: lightblue'>${daysInWeek[i]}</div> 
+        <div col-6 row mx-auto> 
+            <div class=" d-flex justify-content-center">${getDayType(dayIcon)}</div> 
+            <div class="text-center">${dailyTempArray[i]}</div>
+        </div>`
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 }
 
+// Styling for the divs
 let dayArray = document.getElementsByClassName("weekday")
 
+// Add code so that the divs get styled
+// border top and bottom change for the first one and
+// border left and right for the rest
 
-for(let i = 0; i < dayArray.length; i++) {
-    dayArray[i].addEventListener("click", function (){
-        console.log('test')
-    })
+for (days in dayArray) {
+    console.log(dayArray[days])
+    if (dayArray[days] == 0) {
+        dayArray[0].style.borderLeft = "2px solid lightblue"
+        dayArray[0].style.borderRight = "2px solid lightblue"
+    } else if (dayArray[days] !== 0) {
+        dayArray[i].style.borderLeft = "2px solid lightblue"
+        dayArray[i].style.borderRight = "2px solid lightblue"
+    }
 }
 
+// dayArray[0].style.borderLeft = "2px solid lightblue"
+// dayArray[0].style.borderRight = "2px solid lightblue"
+
+
+// for (let i = 0; i < dayArray.length; i++) {
+//     dayArray[i].addEventListener("click", function() {
+//         console.log('test')
+//     })
+// }
+
+
+// Progress bar animation
 
 
 
+// Gets what color the bar and text will be based off of what temp its is today
+
+let getTempColor = (temp) => {
+    const tempArray = ['add8e6', 'E0E000', 'E05A00', 'E32636']
+
+    if (temp >= 100) {
+        return `#${tempArray[3]}`
+    } else if (temp >= 95 && temp < 100) {
+        return `#${tempArray[2]}`
+    } else if (temp >= 80 && temp < 95) {
+        return `#${tempArray[1]}`
+    } else {
+        return `#${tempArray[0]}`
+    }
+}
+
+let currentTemp = Math.ceil(data.current.temp);
+
+// getTempColor(60)
+
+let barColor = getTempColor(currentTemp)
+
+
+
+class ProgressRing extends HTMLElement {
+    constructor() {
+        super();
+        const stroke = this.getAttribute('stroke');
+        const radius = this.getAttribute('radius');
+
+        const normalizedRadius = radius - stroke * 2;
+        this._circumference = normalizedRadius * 2 * Math.PI;
+
+        this._root = this.attachShadow({ mode: 'open' });
+        // Stroke is the color of the bar
+        this._root.innerHTML = `
+        <svg
+          height="${radius * 2}"
+          width="${radius * 2}"
+         >
+           <circle
+             stroke="${barColor}"
+             stroke-dasharray="${this._circumference} ${this._circumference}"
+             style="stroke-dashoffset:${this._circumference}"
+             stroke-width="${stroke}"
+             fill="transparent"
+             r="${normalizedRadius}"
+             cx="${radius}"
+             cy="${radius}"
+          />
+          <text x="45" y="60" fill="${barColor}" alignment-baseline="middle" font-size="24">${currentTemp}&deg;</text>
+        </svg>
+        <style>
+        text {
+            display: flex;
+  align-items: center;
+  justify-content: center;
+        }
+          circle {
+            transition: stroke-dashoffset 0.35s;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+          }
+        </style>
+      `;
+    }
+
+
+    setProgress(percent) {
+        const offset = this._circumference - (percent / 100 * this._circumference);
+        const circle = this._root.querySelector('circle');
+        circle.style.strokeDashoffset = offset;
+    }
+
+    static get observedAttributes() {
+        return ['progress'];
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+        if (name === 'progress') {
+            this.setProgress(newValue);
+        }
+    }
+}
+
+window.customElements.define('progress-ring', ProgressRing);
+
+// emulate progress attribute change
+let progress = 0;
+const el = document.querySelector('progress-ring');
+
+
+// console.log(currentTemp)
+
+const interval = setInterval(() => {
+    // Increase the bar by 1 every 10ms
+    progress++;
+    el.setAttribute('progress', progress);
+    // stops the bar count if the bar equals the current temp
+    if (progress === currentTemp)
+        clearInterval(interval);
+}, 10);
+
+
+// Toady's high and low animations
+
+let high = document.getElementById("todaysHigh")
+let low = document.getElementById("todaysLow")
+
+let feelsLike = data.current.feels_like
+high.innerHTML = feelsLike;
+
+
+
+let currentTime = data.current.dt
+
+
+
+low.innerHTML = msToHMS(currentTime);

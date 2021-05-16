@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CACD,CAAC,AAAA,QAAQ,CACT,CAAC,AAAA,OAAO,AAAC,CACL,OAAO,CAAE,CAAC,CACV,MAAM,CAAE,CAAC,CACT,WAAW,CAAE,4BAA4B,CACzC,UAAU,CAAE,UAAU,CACzB,AAID,AAEQ,GAFL,CACC,CAAC,CACG,GAAG,AAAC,CACA,MAAM,CAAE,IAAI,CACZ,KAAK,CAAE,IAAI,CACd",
+    "sources": [
+        "../../daily.scss"
+    ],
+    "names": [],
+    "file": "daily.min.css"
+}

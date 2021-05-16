@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='author' content='David Nevarez'>
+    <meta name='Description' content='[Put the description of your website here]'>
+
+    <meta property='og.image' content='images/MyCustomFavicon.png'>
+    <meta property='og.title' content='O mighty T'>
+    <meta property='og.description' content='Just a mighty T'>
+
+    <title>Weather Wisdom</title>
+
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/theme_1621040455155.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel='stylesheet' href='assets/css/style.css'>
+
+    <link rel='shortcut icon' href='./assets/images/favicon.svg' type='image/x-icon'>
+</head>
+
+<body>
+
+    <!-- NavBar -->
+    <!-- Credit: David and Aj -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="color: #1190cb;" href="#">
+                <!-- <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> -->
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1000" data-external-asset-id="16456" width="13.313771427692119" height="8.875847618461414" id="symbols_0" fill="#1190cb">
+                    <path
+                        d="M990.3 1.5c-101.7 12.8-186 76-222.8 167-2 5-5.1 13.9-7 20l-3.3 11-3.8.3c-9.1.6-24.6 3.6-34 6.7-17 5.6-31.2 13.5-46.2 25.8l-7.4 6-4.6-1.2c-14.6-3.6-33.8-7.3-47.8-9.3-14-2-20-2.3-50.4-2.3-37.7 0-46.8.8-77 6.7-51.3 9.9-103.8 32.5-147 63.2-34.1 24.2-68.1 58-92.8 92.4-15.3 21.3-34.7 56.8-44.1 80.7-18 45.9-27 91.8-27.1 137.9l-.1 18.4-9.7 1.2c-33.2 4-63.6 16.2-90.2 35.9-9.1 6.8-26.2 23.2-33.4 32.1-18.7 22.9-31.9 50.9-38.4 80.9C.7 786.7.5 789.1.5 812.5c0 23.4.2 25.8 2.7 37.6 7.7 35.8 23.7 66.2 48.2 91.7 5.6 5.7 13.3 13 17.1 16.2 27.3 22.3 61.4 36.8 96.5 41 7 .8 146 1 522.5.8l513-.4 11.1-2.6c50.5-11.9 89.6-40.4 115.1-83.6 9.5-16.1 16.4-34.6 21-56.2 2.6-12.2 2.6-51.7 0-64-4.4-21.1-10.6-37.8-20.5-55.2-24.6-43.5-68.8-75.3-117.9-84.8-5.2-1-9.7-2.1-10-2.4-.4-.3 26-.6 58.5-.6 48.2 0 61.2-.3 70.3-1.6 85.5-11.9 153.8-77.8 169.4-163.4 2.6-14.3 3.2-47.2 1-62.4-4.5-32.9-16.3-62.1-36.5-90.9-8.4-12-31.7-35.3-43.7-43.7-21.8-15.3-44.2-25.9-67.4-31.9-14.1-3.6-31.2-6.1-42.3-6.1h-8.3l-.7-8.8c-6.1-80.1-53.1-155.2-124.8-199.5-32.4-20-67.7-32.9-107.8-39.3-14.6-2.3-61.2-2.8-76.7-.9zM593.5 277.1c99.5 8.6 192 63.7 248.5 147.9 7.9 11.8 16.1 25.8 26.8 46 3.3 6.3 6.7 12.2 7.4 13.1 1.2 1.5 2.8 1.4 18.8-1.7 28.4-5.5 37-6.5 55-6.5 32.3 0 59.6 6.4 88.3 20.7 56.9 28.2 97.6 82.8 108.1 144.9.9 4.9 2.5 19.1 3.7 31.5 1.1 12.4 2.2 22.7 2.5 22.9.2.3 11 1.9 24 3.7 24.6 3.5 33.6 5.5 45.6 10.5 38.9 16 68.1 52.4 75.3 93.8 1.9 10.8 1.9 31.5 0 42.3-8.9 51.3-49.3 91.7-101.5 101.5-9 1.7-33.9 1.8-515.5 1.8-484 0-506.4-.1-515.5-1.8-20.6-3.9-42.6-13.3-58.4-25-28.1-20.8-48-52.9-54.1-87.4-2.1-11.5-2.1-34.1 0-45.6 6.1-34.5 26-66.6 54.1-87.4 15.9-11.7 38.8-21.5 57.9-24.7 7.5-1.3 51.1-4.6 60.1-4.6h2.7l-.8-24.3c-1.6-48.7-.5-69.3 4.9-98.7 23.7-127.7 122.5-232.6 249.2-264.3 37.3-9.4 72.6-12.1 112.9-8.6z">
+                    </path>
+                </svg> WeatherWizDM
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./htmls/daily.html">Daily</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hourly</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Minutely</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- /NavBar -->
+
+
+    <!-- Daily Temp -->
+
+    <!-- Credit: David and Kevin -->
+
+    <div class="container py-5">
+        <div class="row">
+
+            <div class="col-lg-12 mb-4">
+                <div class="bg-white rounded-lg p-5 shadow">
+                    <h2 class="h6 font-weight-bold text-center mb-4">Today's Weather</h2>
+
+                    <!-- Progress bar 1 -->
+
+                    <progress-ring class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center" stroke="4" radius="60" progress="0">
+                    </progress-ring>
+
+                    <!-- END -->
+
+                    <!-- Today's high and low info -->
+                    <div class="row text-center mt-4">
+                        <div class="col-6 border-right">
+                            <div class="h4 font-weight-bold mb-0" id="todaysHigh">28%</div>
+                            <span class="small text-gray">Feels Like</span>
+                        </div>
+                        <div class="col-6">
+                            <div class="h4 font-weight-bold mb-0" id="todaysLow">
+                                60%
+                            </div>
+                            <span class="small text-gray" id="timeTitle">
+                                Last updated
+                            </span>
+                        </div>
+                    </div>
+                    <!-- END -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- /Daily Temp -->
+
+
+
+    <!-- Week View Area -->
+    <!-- Credit: David -->
+
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-lg-12 mb-4">
+                <div class="bg-white rounded-lg p-5 shadow row">
+                    <div class="col-12 col-md-6 col-lg-12 ml-2 ml-md-0 weekday">1</div>
+                    <div class="col-lg col-md-3 ml-2 ml-md-0 weekday">2</div>
+                    <div class="col-lg col-md-3 ml-2 ml-md-0 weekday">3</div>
+                    <div class="col-lg col-md-3 ml-2 ml-md-0 weekday">4</div>
+                    <div class="col-lg col-md-3 ml-2 ml-md-0 weekday">5</div>
+                    <div class="col-lg col-md-3 ml-2 ml-md-0 weekday">6</div>
+                    <div class="col-lg col-md-3 ml-2 ml-md-0 weekday">7</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- /Week View Area -->
+
+
+
+
+
+    <!-- Footer -->
+    <!-- Credit: AJ -->
+    <footer class="page-footer font-small bg-dark text-white pt-4 mt-4">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <h5 class="text-uppercase">Footer Title</h5>
+                    <p>This is where the footer actually goes</p>
+                </div>
+
+                <hr class="clearfix w-100 pb-3 d-md-none">
+
+                <div class="col-md-3 mt-md-0 mt-3">
+                    <h5 class="text-uppercase">Things to Link</h5>
+
+                    <div class="list-group">
+                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 1</a>
+                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 2</a>
+                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 3</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mt-md-0 mt-3">
+                    <h5 class="text-uppercase">More Links</h5>
+                    <div class="list-group">
+                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 4</a>
+                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 5</a>
+                        <a href="#" class="bg-dark text-white list-group-item list-group-item-action">Link 6</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+
+
+    <script src="./node_modules/jQuery/lib/node-jquery.js"></script>
+    <!-- Had to use CDN because Npm wasn't working -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src='./scripts/index.js'></script>
+</body>
+
+</html>
+
+
+<!-- Website used to make logo and favicon -->
+<!-- https://studio.tailorbrands.com/ -->
