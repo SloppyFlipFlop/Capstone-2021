@@ -138,10 +138,12 @@ Chart.defaults.global = {
 
 // BEGIN LINE CHART ============================================
 
+
+
 const lineGraphData = {
     labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     datasets: [{
-            label: "My First dataset",
+            label: "temperature data( Fahrenheit )",
             fillColor: "rgba(220,220,220,0.2)",
             strokeColor: "rgba(220,220,220,1)",
             pointColor: "rgba(220,220,220,1)",
@@ -149,17 +151,27 @@ const lineGraphData = {
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(220,220,220,1)",
             // goings to be thats days temp
-            data: [10, 59, 80, 81, 56, 55, 40]
+            data: []
         },
         {
-            label: "My Second dataset",
+            label: "Humidity data",
             fillColor: "rgba(151,187,205,0.2)",
             strokeColor: "rgba(151,187,205,1)",
             pointColor: "rgba(151,187,205,1)",
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(151,187,205,1)",
-            data: [28, 48, 40, 19, 86, 27, 90]
+            data: []
+        },
+        {
+            label: "Dew Point Data",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: []
         }
     ]
 };
@@ -211,5 +223,37 @@ const lineGraphOptions = {
     legendTemplate: '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<datasets.length; i++){%><li><span style="background-color:<%=datasets[i].strokeColor%>"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>'
 };
 
+
+// Loops through each day to get it's data
+for (let i = 0; i < 7; i++) {
+    // Gets the temp of the day
+    let daysTemp = data.daily[i].temp.day
+        // This is where the data for the temp is going to get pushed
+    let tempDataArea = lineGraphData.datasets[0].data;
+    // Pushes the data to the place
+    tempDataArea.push(daysTemp)
+
+    // ===============================================================
+
+    // Gets the humidity of each day
+    let daysHumidity = data.daily[i].humidity
+
+    // This is where the data for the humidity is going to get pushed
+    let humDataArea = lineGraphData.datasets[1].data;
+
+    humDataArea.push(daysHumidity)
+
+    // ===============================================================
+    // gets the dew point of each day
+    let daysDewPoint = data.daily[i].dew_point
+        // This is where the data for the dew point will get pushed
+    let dewDataArea = lineGraphData.datasets[2].data
+
+    dewDataArea.push(daysDewPoint)
+
+}
+
 const lineCtx = document.getElementById("myGraph").getContext("2d");
 const myLineChart = new Chart(lineCtx).Line(lineGraphData, lineGraphOptions);
+
+// END LINE CHART ============================================
