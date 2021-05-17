@@ -10,15 +10,12 @@
     <meta property='og.title' content='O mighty T'>
     <meta property='og.description' content='Just a mighty T'>
 
-    <title>WeatherWizDM - Daily</title>
+    <title>WeatherWizDM - Hourly</title>
 
-    <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/theme_1621040455155.css">
     <link rel="stylesheet" href="./../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./../assets/css/daily.css">
+    <link rel='stylesheet' href='./../assets/css/hourly.css'>
 
     <link rel='shortcut icon' href='./../assets/images/favicon.svg' type='image/x-icon'>
-
-
 </head>
 
 <body>
@@ -46,10 +43,10 @@
                         <a class="nav-link active" aria-current="page" href="./../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./daily.html">Daily</a>
+                        <a class="nav-link" href="#">Daily</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./hourly.html">Hourly</a>
+                        <a class="nav-link" href="#">Hourly</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Minutely</a>
@@ -64,40 +61,11 @@
     </nav>
     <!-- /NavBar -->
 
-    <!-- Chart -->
-
-    <!-- Credit: David -->
-
-    <div class="container pt-5">
-        <div class="row bg-white rounded-lg p-5 shadow">
-            <h3 class="title col-12 text-center">
-                Weekly Weather Data
-            </h3>
-            <div class="col-12 col-lg-9">
-                <canvas id="myGraph"></canvas>
-            </div>
-            <div class="keyWrapper row col-lg-3 m-0 w-100 d-flex justify-content-around flex-lg-column">
-                <div class="title col-12 row-lg text-center p-0">key</div>
-                <div class="key text-center col-8 p-0">Temperature(&#8457;)</div>
-                <div class="key text-center col-4 p-0">Humidity(&percnt;)</div>
-                <div class="key text-center col-4 p-0">Dew Point(&#8451;)</div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- /Chart -->
 
 
 
     <script src="./../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- Using chart.js CDN-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
-    <!-- jQuery CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="./../scripts/data.js"></script>
-    <script src="./../scripts/daily.js"></script>
-
+    <script src="./../node_modules/jQuery/dist/jquery.min.js"></script>
+    <script src='./../scripts/hourly.js'></script>
 </body>
-
 </html>
