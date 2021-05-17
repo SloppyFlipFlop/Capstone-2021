@@ -155,7 +155,7 @@ const lineGraphData = {
         },
         {
             label: "Humidity data",
-            fillColor: "rgba(151,187,205,0.7)",
+            fillColor: "rgba(151,187,205,0.2)",
             strokeColor: "rgba(151,187,205,1)",
             pointColor: "rgba(151,187,205,1)",
             pointStrokeColor: "#fff",
@@ -165,12 +165,12 @@ const lineGraphData = {
         },
         {
             label: "Dew Point Data",
-            fillColor: "rgba(151,187,205,0.2)",
-            strokeColor: "rgba(151,187,205,1)",
-            pointColor: "rgba(151,187,205,1)",
+            fillColor: "rgba(179, 229, 255, 0.2)",
+            strokeColor: "rgba(179, 229, 255, 1)",
+            pointColor: "rgba(179, 229, 255, 1)",
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(151,187,205,1)",
+            pointHighlightStroke: "rgba(179, 229, 255, 1)",
             data: []
         }
     ]
