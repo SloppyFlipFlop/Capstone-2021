@@ -155,7 +155,7 @@ const lineGraphData = {
         },
         {
             label: "Humidity data",
-            fillColor: "rgba(151,187,205,0.2)",
+            fillColor: "rgba(151,187,205,0.7)",
             strokeColor: "rgba(151,187,205,1)",
             pointColor: "rgba(151,187,205,1)",
             pointStrokeColor: "#fff",
@@ -224,6 +224,8 @@ const lineGraphOptions = {
 };
 
 
+
+
 // Loops through each day to get it's data
 for (let i = 0; i < 7; i++) {
     // Gets the temp of the day
@@ -252,6 +254,9 @@ for (let i = 0; i < 7; i++) {
     dewDataArea.push(daysDewPoint)
 
 }
+
+
+// Needs to be the last thing in this section
 
 const lineCtx = document.getElementById("myGraph").getContext("2d");
 const myLineChart = new Chart(lineCtx).Line(lineGraphData, lineGraphOptions);

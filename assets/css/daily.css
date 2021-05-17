@@ -18,4 +18,52 @@ canvas {
   width: 100%;
   height: auto;
 }
+
+.keyWrapper {
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 1rem;
+}
+
+.keyWrapper .key {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+}
+
+.keyWrapper .key::before {
+  margin-right: 5px;
+  content: "";
+  display: inline-block;
+  border: 2px solid black;
+  height: 20px;
+  width: 20px;
+  background-color: rgba(220, 220, 220, 0.3);
+  vertical-align: -25%;
+}
+
+.keyWrapper .key:nth-child(2)::before {
+  background-color: rgba(151, 187, 205, 0.5);
+}
+
+.keyWrapper .key:nth-child(3)::before {
+  background-color: rgba(151, 187, 205, 0.2);
+}
+
+@media screen and (min-width: 992px) {
+  .keyWrapper {
+    margin-left: 5px !important;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px;
+    margin: 112.5px auto 0 auto !important;
+  }
+}
 /*# sourceMappingURL=daily.css.map */
