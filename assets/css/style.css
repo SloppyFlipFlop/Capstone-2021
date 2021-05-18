@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   box-sizing: border-box;
 }
@@ -234,6 +235,132 @@ footer {
   }
   .footer-bottom-wrapper {
     font-size: 1.3em;
+=======
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* SCSS HSL */
+/* CSS HEX */
+body {
+  background-color: #d9d9d9ff !important;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+nav a svg {
+  height: 50px;
+  width: 50px;
+}
+
+#weekdayWrapper {
+  gap: 5px;
+}
+
+#weekdayWrapper #sunday {
+  border-right: 2px solid lightblue;
+  border-left: 2px solid lightblue;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+#weekdayWrapper #sunday:hover {
+  -webkit-transition: all ease-in-out;
+  transition: all ease-in-out;
+  -webkit-box-shadow: 2px 2px 2px 2px lightblue, -2px -2px 2px 2px lightblue;
+          box-shadow: 2px 2px 2px 2px lightblue, -2px -2px 2px 2px lightblue;
+}
+
+#weekdayWrapper #notSunday {
+  border-top: 2px solid lightblue;
+  border-bottom: 2px solid lightblue;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+#weekdayWrapper #notSunday:hover {
+  -webkit-transition: all ease-in-out;
+  transition: all ease-in-out;
+  -webkit-box-shadow: 2px 2px 2px 2px lightblue, -2px -2px 2px 2px lightblue;
+          box-shadow: 2px 2px 2px 2px lightblue, -2px -2px 2px 2px lightblue;
+}
+
+.weekday {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weekday svg {
+  color: black;
+  -webkit-animation: rotating 10s linear infinite;
+          animation: rotating 10s linear infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+@media (min-width: 768px) {
+  #weekdayWrapper {
+    gap: 0px;
+  }
+  .weekday {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+>>>>>>> dcf4bddd4c761a67e39d94623d5e068e01d56d77
   }
 }
 /*# sourceMappingURL=style.css.map */

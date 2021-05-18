@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* SCSS HSL */
+
+
+/* CSS HEX */
+
+$jet: #353535ff;
+$ming: #3c6e71ff;
+$white: #ffffffff;
+$gainsboro: #d9d9d9ff;
+$indigo-dye: #284b63;
+body {
+    background-color: $gainsboro !important;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+// Navbar styling
+// David
+nav {
+    a {
+        svg {
+            height: 50px;
+            width: 50px;
+        }
+    }
+}
+
+// Weekly style
+#weekdayWrapper {
+    gap: 5px;
+    #sunday {
+        border-right: 2px solid lightblue;
+        border-left: 2px solid lightblue;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        &:hover {
+            // background-color: hotpink;
+            transition: all ease-in-out;
+            box-shadow: 2px 2px 2px 2px lightblue, -2px -2px 2px 2px lightblue;
+        }
+    }
+    #notSunday {
+        border-top: 2px solid lightblue;
+        border-bottom: 2px solid lightblue;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        // padding: 5px;
+        &:hover {
+            // background-color: hotpink;
+            transition: all ease-in-out;
+            box-shadow: 2px 2px 2px 2px lightblue, -2px -2px 2px 2px lightblue;
+        }
+    }
+}
+
+.weekday {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    // border-left: 2px solid lightblue;
+    // border-right: 2px solid lightblue;
+    // border-top: 2px solid lightblue;
+    // border-bottom: 2px solid lightblue;
+    svg {
+        // Color of the svg
+        color: black;
+        animation: rotating 10s linear infinite;
+        // Makes the icon spin where it is
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+}
+
+// For m
+@media (min-width: 768px) {
+    #weekdayWrapper {
+        gap: 0px;
+    }
+    .weekday {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+}
+
+// Animate for the rotate of the icons
+@keyframes rotating {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
