@@ -269,7 +269,8 @@ let data = {
             "precipitation": 0
         }
     ],
-    "hourly": [{
+    "hourly": [
+        {
             "dt": 1620014400,
             "temp": 80.82,
             "feels_like": 78.91,

@@ -20,3 +20,62 @@ nav {
 }
 
 // END OF NAVBAR STYLING ==================================================
+
+// CHART STYLING =====================================================
+
+canvas {
+    padding: 15px;
+    width: 100%;
+    height: auto;
+}
+
+.keyWrapper {
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 1rem;
+    .key {
+        width: fit-content !important;
+        height: fit-content !important;
+        &::before {
+            margin-right: 5px;
+            content: "";
+            // Allows me to set height and width for the ::before
+            display: inline-block; //  <---
+            border: 2px solid black;
+            height: 20px;
+            width: 20px;
+            // This background color will only be done to the first one
+            // For the Dew Point
+            background-color: #97bbcd;
+            // Centers the ::before vertically
+            vertical-align: -25%;
+        }
+        &:nth-child(2)::before {
+            // For the temperature
+            background-color: #dcdcdc;
+        }
+        &:nth-child(3)::before {
+            // For the Humidity
+            background-color: #b3e5ff;
+        }
+        &:nth-child(4)::before {
+            // For the Humidity
+            background-color: rgb(42, 143, 180);
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .keyWrapper {
+        margin-left: 5px !important;
+        width: fit-content !important;
+        height: fit-content;
+        padding: 10px;
+        // top, right, bottom, left
+        // The way i found the padding was jus by doing:
+        // got the canvas height and divided it by 2 and then got the "keyWrapper" height and divided it by two. Then subtracted the two together and if since the canvas had padding i just substarced the padding.
+        margin: 112.5px auto 0 auto !important;
+    }
+}
+
+// END OF CHART STYLING =====================================================

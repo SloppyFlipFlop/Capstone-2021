@@ -62,11 +62,39 @@
     </nav>
     <!-- /NavBar -->
 
+    <!-- Chart -->
+
+    <!-- Credit: David -->
+
+    <div class="container pt-5">
+        <div class="row bg-white rounded-lg p-5 shadow">
+            <h3 class="title col-12 text-center">
+                Hourly Weather Data
+            </h3>
+            <div class="col-12 col-lg-9">
+                <canvas id="myGraph"></canvas>
+            </div>
+            <div class="keyWrapper row col-lg-3 m-0 w-100 d-flex justify-content-around flex-lg-column">
+                <div class="title col-12 row-lg text-center p-0">key</div>
+                <div class="key text-center col-8 p-0">Temperature(&#8457;)</div>
+                <div class="key text-center col-4 p-0">Humidity(&percnt;)</div>
+                <div class="key text-center col-4 p-0">Dew Point(&#8451;)</div>
+                <div class="key text-center col-4 p-0">Wind Speed(KT)</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- /Chart -->
+
 
 
 
     <script src="./../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="./../node_modules/jQuery/dist/jquery.min.js"></script>
+    <!-- Using chart.js CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="./../scripts/data.js"></script>
     <script src='./../scripts/hourly.js'></script>
 </body>
