@@ -70,4 +70,9 @@ canvas {
     margin: 112.5px auto 0 auto !important;
   }
 }
+
+#button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 /*# sourceMappingURL=hourly.css.map */

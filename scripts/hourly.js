@@ -282,3 +282,43 @@ const lineCtx = document.getElementById("myGraph").getContext("2d");
 const myLineChart = new Chart(lineCtx).Line(lineGraphData, lineGraphOptions);
 
 // END LINE CHART ============================================
+
+// DISPLAY HOURLY DATA AREA =================================================
+// 6000 miliseconds are in a minute
+// 60 mintues in an hour
+
+// let millisecondsToHourAndMintues = (milliseconds) => {
+//     let mintues = milliseconds / 6000
+//     let hour;
+
+//     if (mintues > 60) {
+
+//     }
+
+//     return `${hour}:${mintues}`
+// }
+
+function formatDuring(time) {
+    let days = parseInt(time / (1000 * 60 * 60 * 24));
+    let hours = parseInt(time % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+    let minutes = parseInt(time % (1000 * 60 * 60) / (1000 * 60));
+    let seconds = time % (1000 * 60) / 1000;
+    // Format 00 days 00 hours 00 minutes 00 seconds
+    if (days < 10) {
+        days = '0' + days
+    }
+    if (hours < 10) {
+        hours = '0' + hours
+    }
+    if (minutes < 10) {
+        minutes = '0' + minutes
+    }
+    if (seconds < 10) {
+        seconds = '0' + seconds
+    }
+    return days + " " + hours + "hours" + minutes + "minutes" + seconds + "seconds";
+}
+
+console.log(formatDuring(7200000))
+
+// END DISPLAY HOURLY DATA AREA =================================================
