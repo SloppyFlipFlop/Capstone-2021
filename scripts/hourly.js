@@ -125,7 +125,8 @@ Chart.defaults.global = {
     tooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= value %>",
 
     // String - Template string for multiple tooltips
-    multiTooltipTemplate: "<%= value %>",
+    // This will be in the box
+    multiTooltipTemplate: "<%=datasetLabel%> : <%=value%>",
 
     // Function - Will fire on animation progression.
     onAnimationProgress: function() {},
@@ -140,9 +141,9 @@ Chart.defaults.global = {
 
 
 const lineGraphData = {
-    labels: ["12AM", "1AM", "2AM", "3AM","4AM", "5AM", "6AM", "7AM", "8AM", "9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM", "6PM", "7PM", "8PM", "9PM", "10PM", "11PM"],
+    labels: ["12AM", "1AM", "2AM", "3AM", "4AM", "5AM", "6AM", "7AM", "8AM", "9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM", "6PM", "7PM", "8PM", "9PM", "10PM", "11PM"],
     datasets: [{
-            label: "temperature data( Fahrenheit )",
+            label: "temperature( Fahrenheit )",
             fillColor: "rgba(220,220,220,0.2)",
             strokeColor: "rgba(220,220,220,1)",
             pointColor: "rgba(220,220,220,1)",
@@ -153,7 +154,7 @@ const lineGraphData = {
             data: []
         },
         {
-            label: "Humidity data",
+            label: "Humidity",
             fillColor: "rgba(151,187,205,0.2)",
             strokeColor: "rgba(151,187,205,1)",
             pointColor: "rgba(151,187,205,1)",
@@ -163,7 +164,7 @@ const lineGraphData = {
             data: []
         },
         {
-            label: "Dew Point Data",
+            label: "Dew Point",
             fillColor: "rgba(179, 229, 255, 0.2)",
             strokeColor: "rgba(179, 229, 255, 1)",
             pointColor: "rgba(179, 229, 255, 1)",
@@ -173,7 +174,7 @@ const lineGraphData = {
             data: []
         },
         {
-            label: "Wind Speed Data",
+            label: "Wind Speed ",
             fillColor: "rgba(42, 143, 180, .2)",
             strokeColor: "rgba(42, 143, 180, 1)",
             pointColor: "rgba(42, 143, 180, 1)",
@@ -232,6 +233,8 @@ const lineGraphOptions = {
     legendTemplate: '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<datasets.length; i++){%><li><span style="background-color:<%=datasets[i].strokeColor%>"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>'
 };
 
+
+
 // // Loops through each day to get it's data
 for (let i = 0; i < 24; i++) {
     // Gets the temp of the hour
@@ -272,9 +275,50 @@ for (let i = 0; i < 24; i++) {
 }
 
 
+
 // Needs to be the last thing in this section
 
 const lineCtx = document.getElementById("myGraph").getContext("2d");
 const myLineChart = new Chart(lineCtx).Line(lineGraphData, lineGraphOptions);
 
 // END LINE CHART ============================================
+
+// DISPLAY HOURLY DATA AREA =================================================
+// 6000 miliseconds are in a minute
+// 60 mintues in an hour
+
+// let millisecondsToHourAndMintues = (milliseconds) => {
+//     let mintues = milliseconds / 6000
+//     let hour;
+
+//     if (mintues > 60) {
+
+//     }
+
+//     return `${hour}:${mintues}`
+// }
+
+function formatDuring(time) {
+    let days = parseInt(time / (1000 * 60 * 60 * 24));
+    let hours = parseInt(time % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+    let minutes = parseInt(time % (1000 * 60 * 60) / (1000 * 60));
+    let seconds = time % (1000 * 60) / 1000;
+    // Format 00 days 00 hours 00 minutes 00 seconds
+    if (days < 10) {
+        days = '0' + days
+    }
+    if (hours < 10) {
+        hours = '0' + hours
+    }
+    if (minutes < 10) {
+        minutes = '0' + minutes
+    }
+    if (seconds < 10) {
+        seconds = '0' + seconds
+    }
+    return days + " " + hours + "hours" + minutes + "minutes" + seconds + "seconds";
+}
+
+console.log(formatDuring(7200000))
+
+// END DISPLAY HOURLY DATA AREA =================================================

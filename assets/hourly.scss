@@ -1,13 +1,13 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
-
 // NAVBAR STYLING ========================================================
-
 // Navbar styling
 // David
 nav {
@@ -20,9 +20,7 @@ nav {
 }
 
 // END OF NAVBAR STYLING ==================================================
-
 // CHART STYLING =====================================================
-
 canvas {
     padding: 15px;
     width: 100%;
@@ -46,21 +44,21 @@ canvas {
             width: 20px;
             // This background color will only be done to the first one
             // For the Dew Point
-            background-color: #97bbcd;
+            background-color: rgba(42, 143, 180, 1);
             // Centers the ::before vertically
             vertical-align: -25%;
         }
         &:nth-child(2)::before {
             // For the temperature
-            background-color: #dcdcdc;
+            background-color: rgba(220, 220, 220, 1);
         }
         &:nth-child(3)::before {
             // For the Humidity
-            background-color: #b3e5ff;
+            background-color: rgba(151, 187, 205, 1);
         }
         &:nth-child(4)::before {
-            // For the Humidity
-            background-color: rgb(42, 143, 180);
+            // For the wind speed
+            background-color: rgba(179, 229, 255, 1);
         }
     }
 }
@@ -79,3 +77,9 @@ canvas {
 }
 
 // END OF CHART STYLING =====================================================
+// DISPLAY HOURLY DATA AREA =================================================
+#button {
+    box-shadow: none;
+}
+
+// END DISPLAY HOURLY DATA AREA =================================================
