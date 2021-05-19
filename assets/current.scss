@@ -7,20 +7,6 @@
     box-sizing: border-box;
 }
 
-// NAVBAR STYLING ========================================================
-
-// Navbar styling
-// David
-nav {
-    a {
-        svg {
-            height: 50px;
-            width: 50px;
-        }
-    }
-}
-
-// END OF NAVBAR STYLING ==================================================
 
 // NAVBAR STYLING ========================================================
 
@@ -39,6 +25,47 @@ nav {
 
 // DATA DISPLAY AREA ======================================================
 
+// SUNSET AND SUN RISE STYLING ============================================
 
+
+#feelsLikeWrapper {
+    #number {
+        font-size: 40px;
+    }
+    // #title {
+
+    // }
+}
+
+#icon {
+    height: 25px;
+    width: 25px;
+}
+
+#tempSUnWrapper {
+    .bi-brightness-high {
+        height: 90px !important;
+        width: 100px !important;
+        animation: rotating 10s linear infinite;
+        color: #e9ec37;
+        // color: black;
+        // Makes the icon spin where it is
+
+        transform-origin: center !important;
+        transform-box: fill-box !important;
+    }
+}
+
+// Animate for the rotate of the icons
+@keyframes rotating {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+// END SUNSET AND SUN RISE STYLING ============================================
 
 // END DATA DISPLAY AREA ======================================================
