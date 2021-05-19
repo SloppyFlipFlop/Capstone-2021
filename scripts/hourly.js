@@ -125,7 +125,8 @@ Chart.defaults.global = {
     tooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= value %>",
 
     // String - Template string for multiple tooltips
-    multiTooltipTemplate: "<%= value %>",
+    // This will be in the box
+    multiTooltipTemplate: "<%=datasetLabel%> : <%=value%>",
 
     // Function - Will fire on animation progression.
     onAnimationProgress: function() {},
@@ -140,9 +141,9 @@ Chart.defaults.global = {
 
 
 const lineGraphData = {
-    labels: ["12AM", "1AM", "2AM", "3AM","4AM", "5AM", "6AM", "7AM", "8AM", "9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM", "6PM", "7PM", "8PM", "9PM", "10PM", "11PM"],
+    labels: ["12AM", "1AM", "2AM", "3AM", "4AM", "5AM", "6AM", "7AM", "8AM", "9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM", "6PM", "7PM", "8PM", "9PM", "10PM", "11PM"],
     datasets: [{
-            label: "temperature data( Fahrenheit )",
+            label: "temperature( Fahrenheit )",
             fillColor: "rgba(220,220,220,0.2)",
             strokeColor: "rgba(220,220,220,1)",
             pointColor: "rgba(220,220,220,1)",
@@ -153,7 +154,7 @@ const lineGraphData = {
             data: []
         },
         {
-            label: "Humidity data",
+            label: "Humidity",
             fillColor: "rgba(151,187,205,0.2)",
             strokeColor: "rgba(151,187,205,1)",
             pointColor: "rgba(151,187,205,1)",
@@ -163,7 +164,7 @@ const lineGraphData = {
             data: []
         },
         {
-            label: "Dew Point Data",
+            label: "Dew Point",
             fillColor: "rgba(179, 229, 255, 0.2)",
             strokeColor: "rgba(179, 229, 255, 1)",
             pointColor: "rgba(179, 229, 255, 1)",
@@ -173,7 +174,7 @@ const lineGraphData = {
             data: []
         },
         {
-            label: "Wind Speed Data",
+            label: "Wind Speed ",
             fillColor: "rgba(42, 143, 180, .2)",
             strokeColor: "rgba(42, 143, 180, 1)",
             pointColor: "rgba(42, 143, 180, 1)",
@@ -232,6 +233,8 @@ const lineGraphOptions = {
     legendTemplate: '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<datasets.length; i++){%><li><span style="background-color:<%=datasets[i].strokeColor%>"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>'
 };
 
+
+
 // // Loops through each day to get it's data
 for (let i = 0; i < 24; i++) {
     // Gets the temp of the hour
@@ -270,6 +273,7 @@ for (let i = 0; i < 24; i++) {
     windDataArea.push(hoursWindSpeed)
 
 }
+
 
 
 // Needs to be the last thing in this section

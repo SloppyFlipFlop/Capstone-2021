@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -39,20 +41,20 @@ canvas {
   border: 2px solid black;
   height: 20px;
   width: 20px;
-  background-color: #97bbcd;
+  background-color: #2a8fb4;
   vertical-align: -25%;
 }
 
 .keyWrapper .key:nth-child(2)::before {
-  background-color: #dcdcdc;
+  background-color: gainsboro;
 }
 
 .keyWrapper .key:nth-child(3)::before {
-  background-color: #b3e5ff;
+  background-color: #97bbcd;
 }
 
 .keyWrapper .key:nth-child(4)::before {
-  background-color: #2a8fb4;
+  background-color: #b3e5ff;
 }
 
 @media screen and (min-width: 992px) {
