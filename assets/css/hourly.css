@@ -87,6 +87,8 @@ h1 {
 
 .accordion-item {
   border-radius: 1rem !important;
+  background-color: rgba(42, 143, 180, 0.2);
+  padding: 0;
 }
 
 #accordionHeader {

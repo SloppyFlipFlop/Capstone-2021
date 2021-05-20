@@ -7,7 +7,14 @@ let data = {
         "dt": 1620014854,
         "sunrise": 1619959135,
         "sunset": 1620007935,
-        "temp": 80.82,
+        "temp": {
+            "day": 80.82,
+            "min": 75.64,
+            "max": 90.10,
+            "night": 75.2,
+            "eve": 86.6,
+            "morn": 74.69
+        },
         "feels_like": 78.91,
         "pressure": 1000,
         "humidity": 16,
@@ -269,8 +276,7 @@ let data = {
             "precipitation": 0
         }
     ],
-    "hourly": [
-        {
+    "hourly": [{
             "dt": 1620014400,
             "temp": 80.82,
             "feels_like": 78.91,

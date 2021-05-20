@@ -22,6 +22,14 @@ nav a svg {
   width: 25px;
 }
 
+.icon-sun {
+  -webkit-transform-origin: center !important;
+          transform-origin: center !important;
+  transform-box: fill-box !important;
+  -webkit-animation: rotating 10s linear infinite;
+          animation: rotating 10s linear infinite;
+}
+
 #tempSUnWrapper .bi-brightness-high {
   height: 90px !important;
   width: 100px !important;

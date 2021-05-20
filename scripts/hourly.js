@@ -518,23 +518,23 @@ for (let i = 0; i < 24; i++) {
             </div>`
 }
 
-for (let i = 24; i < 48; i++) {
+for (let i = 0; i < 24; i++) {
     var parent = document.getElementById("accordionTwoWrapper")
     parent.innerHTML += `
     <div class="accordion" id="accordionExample" style="margin-top: 5px">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapse${i}" aria-expanded="true" aria-controls="collapse${i - 24}" id="accordionHeader">
+                        data-bs-target="#collapseTwo${i}" aria-expanded="true" aria-controls="collapseTwo${i}" id="accordionHeader">
                         <div class="row w-100">
-                            <div class="col-3">Time: ${allDayTwoArray[0][i - 24]}</div>
-                            <div class="col-3">Temp: ${allDayTwoArray[1][i - 24]}<sup>&#8457;</sup></div>
-                            <div class="col-3">Humidity: ${allDayTwoArray[2][i - 24]}%</div>
-                            <div class="col-3">Dew Point: ${allDayTwoArray[3][i - 24]}&deg;</div>
+                            <div class="col-3">Time: ${allDayTwoArray[0][i]}</div>
+                            <div class="col-3">Temp: ${allDayTwoArray[1][i]}<sup>&#8457;</sup></div>
+                            <div class="col-3">Humidity: ${allDayTwoArray[2][i]}%</div>
+                            <div class="col-3">Dew Point: ${allDayTwoArray[3][i]}&deg;</div>
                         </div>
                     </button>
                 </h2>
-                <div id="collapse${i - 24}" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                <div id="collapseTwo${i}" class="accordion-collapse collapse" aria-labelledby="headingOne"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <div class="col-12">
@@ -550,7 +550,7 @@ for (let i = 24; i < 48; i++) {
                                             </svg>
                                             Presure
                                         </div>
-                                        <div class="col-8 pr-0 d-flex justify-content-end">${allDayTwoArray[7][i - 24]}</div>
+                                        <div class="col-8 pr-0 d-flex justify-content-end">${allDayTwoArray[7][i]}</div>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -564,7 +564,7 @@ for (let i = 24; i < 48; i++) {
                                             </svg>
                                             UV Index
                                         </div>
-                                        <div class="col-7 d-flex justify-content-end" style="margin-left: auto;">${allDayTwoArray[5][i - 24]} of 10</div>
+                                        <div class="col-7 d-flex justify-content-end" style="margin-left: auto;">${allDayTwoArray[5][i]} of 10</div>
                                     </div>
                                 </div>
                             </div>
@@ -580,7 +580,7 @@ for (let i = 24; i < 48; i++) {
                                             </svg>
                                             Wind Speed
                                         </div>
-                                        <div class="col-7 d-flex justify-content-end p-0" style="margin-left: auto;">${allDayTwoArray[6][i - 24]}</div>
+                                        <div class="col-7 d-flex justify-content-end p-0" style="margin-left: auto;">${allDayTwoArray[6][i]}</div>
                                     </div>
                                 </div>
                                 <div class="col-6">
@@ -594,7 +594,7 @@ for (let i = 24; i < 48; i++) {
                                             </svg>
                                             Clouds
                                         </div>
-                                        <div class="col-8 d-flex justify-content-end">${allDayTwoArray[4][i - 24]}%</div>
+                                        <div class="col-8 d-flex justify-content-end">${allDayTwoArray[4][i]}%</div>
                                     </div>
                                 </div>
                             </div>
