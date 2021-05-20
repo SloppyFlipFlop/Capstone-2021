@@ -430,18 +430,33 @@ console.table(allDayOneArray)
 allDayTwoArray.push(dayTwoTimeArray, dayTwoTempArray, dayTwoHumidityArray, dayTwoDewPointArray, dayTwoCloudArray, dayTwoUVIndex, dayTwoWindSpeedArray, dayTwoPressureArray)
 console.table(allDayTwoArray)
 
+// Converts miliseconds into hours and seconds
+let convertMS = (milliseconds) => {
+        var day, hour, minute, seconds;
+        seconds = Math.floor(milliseconds / 1000);
+        minute = Math.floor(seconds / 60);
+        seconds = seconds % 60;
+        hour = Math.floor(minute / 60);
+        minute = minute % 60;
+        day = Math.floor(hour / 24);
+        hour = hour % 24;
+        return `${hour}:${minute}`
+    }
+    // console.log(convertMS(allDayTwoArray[0][0]))
+
+let tArray = ["12AM", "1AM", "2AM", "3AM", "4AM", "5AM", "6AM", "7AM", "8AM", "9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM", "6PM", "7PM", "8PM", "9PM", "10PM", "11PM"]
 
 // Goes through all the data in day one and starts to display it
 for (let i = 0; i < 24; i++) {
     var parent = document.getElementById("accordionOneWrapper")
     parent.innerHTML += `
     <div class="accordion" id="accordionExample" style="margin-top: 5px">
-            <div class="accordion-item">
+            <div class="accordion-item" style="border: 1px darkturquoise solid">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse${i}" aria-expanded="true" aria-controls="collapse${i}" id="accordionHeader">
                         <div class="row w-100">
-                            <div class="col-3">Time: ${allDayOneArray[0][i]}</div>
+                            <div class="col-3">Time: ${tArray[i]}</div>
                             <div class="col-3">Temp: ${allDayOneArray[1][i]}<sup>&#8457;</sup></div>
                             <div class="col-3">Humidity: ${allDayOneArray[2][i]}%</div>
                             <div class="col-3">Dew Point: ${allDayOneArray[3][i]}&deg;</div>
@@ -527,7 +542,7 @@ for (let i = 0; i < 24; i++) {
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseTwo${i}" aria-expanded="true" aria-controls="collapseTwo${i}" id="accordionHeader">
                         <div class="row w-100">
-                            <div class="col-3">Time: ${allDayTwoArray[0][i]}</div>
+                            <div class="col-3">Time: ${tArray[i]}</div>
                             <div class="col-3">Temp: ${allDayTwoArray[1][i]}<sup>&#8457;</sup></div>
                             <div class="col-3">Humidity: ${allDayTwoArray[2][i]}%</div>
                             <div class="col-3">Dew Point: ${allDayTwoArray[3][i]}&deg;</div>
