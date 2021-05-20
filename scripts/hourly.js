@@ -478,7 +478,7 @@ for (let i = 0; i < 24; i++) {
                                             </svg>
                                             UV Index
                                         </div>
-                                        <div class="col-7 d-flex justify-content-end" style="margin-left: auto;">${allDayOneArray[5][i]} of 10</div>
+                                        <div class="col-7 d-flex justify-content-end" style="margin-left: auto; width: fit-content">${allDayOneArray[5][i]} of 10</div>
                                     </div>
                                 </div>
                             </div>
@@ -494,12 +494,12 @@ for (let i = 0; i < 24; i++) {
                                             </svg>
                                             Wind Speed
                                         </div>
-                                        <div class="col-7 d-flex justify-content-end p-0" style="margin-left: auto;">${allDayOneArray[6][i]}</div>
+                                        <div class="col-7 d-flex justify-content-end p-0" style="margin-left: auto; width: fit-content;">${allDayOneArray[6][i]}</div>
                                     </div>
                                 </div>
                                 <div class="col-6">
-                                    <div class="row">
-                                        <div class="col-4 ">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col-4 " style="width: fit-content;">
                                             <svg id="icons" xmlns="http://www.w3.org/2000/svg" width="16"
                                                 height="16" fill="currentColor" class="bi bi-cloud"
                                                 viewBox="0 0 16 16">
@@ -508,7 +508,7 @@ for (let i = 0; i < 24; i++) {
                                             </svg>
                                             Clouds
                                         </div>
-                                        <div class="col-8 d-flex justify-content-end">${allDayOneArray[4][i]}%</div>
+                                        <div class="col-8 d-flex justify-content-end" style="width: fit-content">${allDayOneArray[4][i]}%</div>
                                     </div>
                                 </div>
                             </div>
@@ -564,7 +564,7 @@ for (let i = 0; i < 24; i++) {
                                             </svg>
                                             UV Index
                                         </div>
-                                        <div class="col-7 d-flex justify-content-end" style="margin-left: auto;">${allDayTwoArray[5][i]} of 10</div>
+                                        <div class="col-7 d-flex justify-content-end width-fit" style="margin-left: auto;width: fit-content;">${allDayTwoArray[5][i]} of 10</div>
                                     </div>
                                 </div>
                             </div>
@@ -580,12 +580,12 @@ for (let i = 0; i < 24; i++) {
                                             </svg>
                                             Wind Speed
                                         </div>
-                                        <div class="col-7 d-flex justify-content-end p-0" style="margin-left: auto;">${allDayTwoArray[6][i]}</div>
+                                        <div class="col-7 d-flex justify-content-end p-0" style="margin-left: auto; width: fit-content;">${allDayTwoArray[6][i]}</div>
                                     </div>
                                 </div>
                                 <div class="col-6">
-                                    <div class="row">
-                                        <div class="col-4 ">
+                                    <div class="row d-flex justify-content-between">
+                                        <div class="col-4" style="width: fit-content;">
                                             <svg id="icons" xmlns="http://www.w3.org/2000/svg" width="16"
                                                 height="16" fill="currentColor" class="bi bi-cloud"
                                                 viewBox="0 0 16 16">
@@ -594,7 +594,7 @@ for (let i = 0; i < 24; i++) {
                                             </svg>
                                             Clouds
                                         </div>
-                                        <div class="col-8 d-flex justify-content-end">${allDayTwoArray[4][i]}%</div>
+                                        <div class="col-8 d-flex justify-content-end" style="width: fit-content">${allDayTwoArray[4][i]}%</div>
                                     </div>
                                 </div>
                             </div>
