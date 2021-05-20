@@ -129,10 +129,10 @@ Chart.defaults.global = {
     multiTooltipTemplate: "<%=datasetLabel%> : <%=value%>",
 
     // Function - Will fire on animation progression.
-    onAnimationProgress: function() {},
+    onAnimationProgress: function () { },
 
     // Function - Will fire on animation completion.
-    onAnimationComplete: function() {}
+    onAnimationComplete: function () { }
 };
 
 
@@ -143,46 +143,46 @@ Chart.defaults.global = {
 const lineGraphData = {
     labels: ["12AM", "1AM", "2AM", "3AM", "4AM", "5AM", "6AM", "7AM", "8AM", "9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM", "6PM", "7PM", "8PM", "9PM", "10PM", "11PM"],
     datasets: [{
-            label: "temperature( Fahrenheit )",
-            fillColor: "rgba(220,220,220,0.2)",
-            strokeColor: "rgba(220,220,220,1)",
-            pointColor: "rgba(220,220,220,1)",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(220,220,220,1)",
-            // goings to be thats days temp
-            data: []
-        },
-        {
-            label: "Humidity",
-            fillColor: "rgba(151,187,205,0.2)",
-            strokeColor: "rgba(151,187,205,1)",
-            pointColor: "rgba(151,187,205,1)",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(151,187,205,1)",
-            data: []
-        },
-        {
-            label: "Dew Point",
-            fillColor: "rgba(179, 229, 255, 0.2)",
-            strokeColor: "rgba(179, 229, 255, 1)",
-            pointColor: "rgba(179, 229, 255, 1)",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(179, 229, 255, 1)",
-            data: []
-        },
-        {
-            label: "Wind Speed ",
-            fillColor: "rgba(42, 143, 180, .2)",
-            strokeColor: "rgba(42, 143, 180, 1)",
-            pointColor: "rgba(42, 143, 180, 1)",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(42, 143, 180, 1)",
-            data: []
-        }
+        label: "temperature( Fahrenheit )",
+        fillColor: "rgba(220,220,220,0.2)",
+        strokeColor: "rgba(220,220,220,1)",
+        pointColor: "rgba(220,220,220,1)",
+        pointStrokeColor: "#fff",
+        pointHighlightFill: "#fff",
+        pointHighlightStroke: "rgba(220,220,220,1)",
+        // goings to be thats days temp
+        data: []
+    },
+    {
+        label: "Humidity",
+        fillColor: "rgba(151,187,205,0.2)",
+        strokeColor: "rgba(151,187,205,1)",
+        pointColor: "rgba(151,187,205,1)",
+        pointStrokeColor: "#fff",
+        pointHighlightFill: "#fff",
+        pointHighlightStroke: "rgba(151,187,205,1)",
+        data: []
+    },
+    {
+        label: "Dew Point",
+        fillColor: "rgba(179, 229, 255, 0.2)",
+        strokeColor: "rgba(179, 229, 255, 1)",
+        pointColor: "rgba(179, 229, 255, 1)",
+        pointStrokeColor: "#fff",
+        pointHighlightFill: "#fff",
+        pointHighlightStroke: "rgba(179, 229, 255, 1)",
+        data: []
+    },
+    {
+        label: "Wind Speed ",
+        fillColor: "rgba(42, 143, 180, .2)",
+        strokeColor: "rgba(42, 143, 180, 1)",
+        pointColor: "rgba(42, 143, 180, 1)",
+        pointStrokeColor: "#fff",
+        pointHighlightFill: "#fff",
+        pointHighlightStroke: "rgba(42, 143, 180, 1)",
+        data: []
+    }
     ]
 };
 
@@ -239,7 +239,7 @@ const lineGraphOptions = {
 for (let i = 0; i < 24; i++) {
     // Gets the temp of the hour
     let hoursTemp = data.hourly[i].temp
-        // This is where the data for the temp is going to get pushed
+    // This is where the data for the temp is going to get pushed
     let tempDataArea = lineGraphData.datasets[0].data;
     // Pushes the data to the place
     tempDataArea.push(hoursTemp)
@@ -257,7 +257,7 @@ for (let i = 0; i < 24; i++) {
     // ===============================================================
     // gets the dew point of each hour
     let hoursDewPoint = data.hourly[i].dew_point
-        // This is where the data for the dew point will get pushed
+    // This is where the data for the dew point will get pushed
     let dewDataArea = lineGraphData.datasets[2].data
 
     dewDataArea.push(hoursDewPoint)
@@ -287,17 +287,6 @@ const myLineChart = new Chart(lineCtx).Line(lineGraphData, lineGraphOptions);
 // 6000 miliseconds are in a minute
 // 60 mintues in an hour
 
-// let millisecondsToHourAndMintues = (milliseconds) => {
-//     let mintues = milliseconds / 6000
-//     let hour;
-
-//     if (mintues > 60) {
-
-//     }
-
-//     return `${hour}:${mintues}`
-// }
-
 function formatDuring(time) {
     let days = parseInt(time / (1000 * 60 * 60 * 24));
     let hours = parseInt(time % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
@@ -319,6 +308,222 @@ function formatDuring(time) {
     return days + " " + hours + "hours" + minutes + "minutes" + seconds + "seconds";
 }
 
-console.log(formatDuring(7200000))
+// console.log(formatDuring(7200000))
+
+
+
+
+// An array of all the temp
+const tempArray = []
+// An array of all the time data;
+const timeArray = []
+// An array of all the humidity data
+const humidityArray = []
+// An array of all the dew Point data
+const dewPointArray = []
+// An array of all the presure data;
+const cloudArray = []
+// An array of all the UV Inedx data;
+const uvIndexArray = [];
+// An array of all the wind speed data;
+const windSpeedArray = []
+// An array of all the presure dat
+const pressureArray = []
+
+// Gets each hour
+
+for (let i = 0; i < 48; i++) {
+    // gets the temp of that hour
+    let time = data.hourly[i].dt;
+    // Gets the temp of that hour
+    let temp = data.hourly[i].temp;
+    // Gets the Humidity of that hour
+    let humidity = data.hourly[i].humidity;
+    // gets the Dew point of that hour
+    let dewPoint = data.hourly[i].dew_point;
+
+    // Gets the pressure of the hour
+    let pressure = data.hourly[i].pressure;
+    // Gets the UV Index of the hour
+    let uvIndex = data.hourly[i].uvi;
+    // Gets the Wind speed of the hour
+    let windSpeed = data.hourly[i].wind_speed;
+    // Get the clouds of the hour
+    let clouds =  data.hourly[i].clouds
+
+    // Pushing all the data to their array's
+    tempArray.push(temp)
+    timeArray.push(time)
+    humidityArray.push(humidity)
+    dewPointArray.push(dewPoint)
+    cloudArray.push(clouds)
+    uvIndexArray.push(uvIndex)
+    windSpeedArray.push(windSpeed)
+    pressureArray.push(pressure)
+}
+
+// going to be half of the timeArray
+const timeHalf = Math.ceil(timeArray.length / 2);
+
+// cuts the array into two and make the two into arrays
+const dayOneTimeArray = timeArray.splice(0, timeHalf)
+const dayTwoTimeArray = timeArray.splice(-timeHalf)
+
+// going to be half of the TempArray
+const tempHalf = Math.ceil(tempArray.length / 2);
+
+// cuts the array into two and make the two into arrays
+const dayOneTempArray = tempArray.splice(0, tempHalf)
+const dayTwoTempArray = tempArray.splice(-tempHalf)
+
+// Going to be half of the humidity Array
+const humidityHalf = Math.ceil(humidityArray.length / 2)
+
+// Cuts the array in half
+const dayOneHumidityArray = humidityArray.splice(0, humidityHalf)
+const dayTwoHumidityArray = humidityArray.splice(-humidityHalf)
+
+// Going to be half of the Dew Point Array
+const dewPointHalf = Math.ceil(dewPointArray.length / 2)
+
+// Cuts the array in half
+const dayOneDewPointArray = dewPointArray.splice(0, dewPointHalf)
+const dayTwoDewPointArray = dewPointArray.splice(-dewPointHalf)
+
+// Going to be half of the cloud Array
+const cloudHalf = Math.ceil(cloudArray.length / 2)
+
+// Cuts the array in half
+const dayOneCloudArray = cloudArray.splice(0, cloudHalf)
+const dayTwoCloudArray = cloudArray.splice(-cloudHalf)
+
+// Going to be half of the UV Index Array
+const uvIndexHalf = Math.ceil(uvIndexArray.length / 2)
+
+// Cuts the array in half
+const dayOneUVIndex = uvIndexArray.splice(0, uvIndexHalf)
+const dayTwoUVIndex = uvIndexArray.splice(-uvIndexHalf)
+
+// Going to be half of the Wind Speed Array
+const windSpeedHalf = Math.ceil(windSpeedArray.length / 2)
+
+// Cuts the array in half
+const dayOneWindSpeedArray = windSpeedArray.splice(0, windSpeedHalf)
+const dayTwoWindSpeedArray = windSpeedArray.splice(-windSpeedHalf)
+
+// Going to be half of the Wind Speed Array
+const pressureHalf = Math.ceil(pressureArray.length / 2)
+
+// Cuts the array in half
+const dayOnePressureArray = pressureArray.splice(0, pressureHalf)
+const dayTwoPressureArray = pressureArray.splice(-pressureHalf)
+
+// An array of all the day one's
+let allDayOneArray = []
+// An array of all the day two's
+let allDayTwoArray = []
+
+// I push all the data of each day into the big array for me to easily get it later
+allDayOneArray.push(dayOneTimeArray, dayOneTempArray, dayOneHumidityArray, dayOneDewPointArray, dayOneCloudArray, dayOneUVIndex, dayOneWindSpeedArray, dayOnePressureArray)
+console.table(allDayOneArray)
+
+allDayTwoArray.push(dayTwoTimeArray, dayTwoTempArray, dayTwoHumidityArray, dayTwoDewPointArray, dayTwoCloudArray, dayTwoUVIndex, dayTwoWindSpeedArray, dayTwoPressureArray)
+console.table(allDayTwoArray)
+
+
+// Goes through all the data in day one and starts to display it
+for (let i = 0; i < 24; i++) {
+    var parent = document.getElementById("accordionWrapper")
+    parent.innerHTML += `
+    <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div class="row w-100">
+                            <div class="col-3">Time: ${allDayOneArray[0][i]}</div>
+                            <div class="col-3">Temp: ${allDayOneArray[1][i]}</div>
+                            <div class="col-3">Humidity: ${allDayOneArray[2][i]}</div>
+                            <div class="col-3">Dew Point: ${allDayOneArray[3][i]}</div>
+                        </div>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-4 text-center pr-0 pl-4 justify-content-start d-flex">
+                                            <svg id="icons" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                height="16" fill="currentColor" class="bi bi-arrow-bar-down"
+                                                viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z" />
+                                            </svg>
+                                            Presure
+                                        </div>
+                                        <div class="col-8 pr-0 d-flex justify-content-end">${allDayOneArray[7][i]}</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-4 text-center">
+                                            <svg id="icons" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                height="16" fill="currentColor" class="bi bi-sunglasses"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3 5a2 2 0 0 0-2 2v.5H.5a.5.5 0 0 0 0 1H1V9a2 2 0 0 0 2 2h1a3 3 0 0 0 3-3 1 1 0 1 1 2 0 3 3 0 0 0 3 3h1a2 2 0 0 0 2-2v-.5h.5a.5.5 0 0 0 0-1H15V7a2 2 0 0 0-2-2h-2a2 2 0 0 0-1.888 1.338A1.99 1.99 0 0 0 8 6a1.99 1.99 0 0 0-1.112.338A2 2 0 0 0 5 5H3zm0 1h.941c.264 0 .348.356.112.474l-.457.228a2 2 0 0 0-.894.894l-.228.457C2.356 8.289 2 8.205 2 7.94V7a1 1 0 0 1 1-1z" />
+                                            </svg>
+                                            UV Index
+                                        </div>
+                                        <div class="col-8 d-flex justify-content-end">${allDayOneArray[5][i]}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-4 text-center p-0">
+                                            <svg id="icons" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                height="16" fill="currentColor" class="bi bi-wind"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12.5 2A2.5 2.5 0 0 0 10 4.5a.5.5 0 0 1-1 0A3.5 3.5 0 1 1 12.5 8H.5a.5.5 0 0 1 0-1h12a2.5 2.5 0 0 0 0-5zm-7 1a1 1 0 0 0-1 1 .5.5 0 0 1-1 0 2 2 0 1 1 2 2h-5a.5.5 0 0 1 0-1h5a1 1 0 0 0 0-2zM0 9.5A.5.5 0 0 1 .5 9h10.042a3 3 0 1 1-3 3 .5.5 0 0 1 1 0 2 2 0 1 0 2-2H.5a.5.5 0 0 1-.5-.5z" />
+                                            </svg>
+                                            Wind Speed
+                                        </div>
+                                        <div class="col-8 d-flex justify-content-end p-0">${allDayOneArray[6][i]}</div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="col-4 text-center">
+                                            <svg id="icons" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                height="16" fill="currentColor" class="bi bi-cloud"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z" />
+                                            </svg>
+                                            Clouds
+                                        </div>
+                                        <div class="col-8 d-flex justify-content-end">${allDayOneArray[4][i]}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>`
+}
+
+// console.log(tempArray)
+// console.log(timeArray)
+// console.log(humidityArray)
+// console.log(dewPointArray)
+
+
+
 
 // END DISPLAY HOURLY DATA AREA =================================================
