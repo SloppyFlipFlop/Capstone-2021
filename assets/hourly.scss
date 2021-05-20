@@ -88,3 +88,22 @@ canvas {
 }
 
 // END DISPLAY HOURLY DATA AREA =================================================
+// ACCORDION STYLING ==================
+h1 {
+    font-size: 32px;
+}
+
+// Body of content
+.accordion-item {
+    border-radius: 1rem !important;
+}
+
+#accordionHeader {
+    background-color: rgba(173, 216, 230, 0.5) !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    // The color of the text in the header
+    color: black;
+    border: 2px solid rgba(42, 143, 180, 1);
+    border-radius: 1rem;
+}
