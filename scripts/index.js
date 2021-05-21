@@ -275,9 +275,9 @@ class ProgressRing extends HTMLElement {
              cx="${radius}"
              cy="${radius}"
           />
-          <text x="45" y="45" fill="${getTempColor(currentHigh)}" aligment-baseline="middle" font-size="16"> ${currentHigh} </text>
-          <text x="45" y="60" fill="${barColor}" alignment-baseline="middle" font-size="24">${currentTemp}&deg;</text>
-          <text x="40" y="85" fill="${getTempColor(Math.round(currentLow))}" aligment-baseline="middle" font-size="16"> ${currentLow} </text>
+          <text x="45" y="40" fill="${getTempColor(currentHigh)}" aligment-baseline="middle" font-size="16">${currentHigh}&deg;</text>
+          <text x="40" y="60" fill="${barColor}" alignment-baseline="middle" font-size="24">${currentTemp}&#8457;</text>
+          <text x="40" y="85" fill="${getTempColor(Math.round(currentLow))}" aligment-baseline="middle" font-size="16">${currentLow}&deg;</text>
         </svg>
         <style>
         text {
