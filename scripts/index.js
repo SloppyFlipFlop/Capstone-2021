@@ -4,7 +4,7 @@
 // Gets what color the bar and text will be based off of what temp its is today
 
 let getTempColor = (temp) => {
-    const tempArray = ['add8e6', 'E0E000', 'E05A00', 'E32636']
+    const tempArray = ['add8e6', 'FFEC5E', 'E05A00', 'E32636']
 
     if (temp >= 100) {
         return `#${tempArray[3]}`
@@ -38,33 +38,6 @@ const NightAndCloudyIcon = `<i class="bi bi-cloud-moon"></i>`
 // An array of all the days in the week
 let daysInWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
-function msToHMS(duration) {
-
-    let isPM = false
-
-    var milliseconds = parseInt((duration % 1000) / 100),
-        // seconds = parseInt((duration / 1000) % 60),
-        minutes = parseInt((duration / (1000 * 60)) % 60),
-        hours = parseInt((duration / (1000 * 60 * 60)) % 24);
-
-    hours = (hours < 10) ? "0" + hours : hours;
-    minutes = (minutes < 10) ? "0" + minutes : minutes;
-    // seconds = (seconds < 10) ? "0" + seconds : seconds;
-
-
-    if (hours > 12) {
-        hours = hours - 12
-        isPM = true
-    }
-
-    if (isPM == true) {
-        return `${hours}:${minutes} PM`
-
-    } else {
-        return `${hours}:${minutes} AM`
-    }
-
-}
 
 // An array that will hold all the temps of the day to be be used later
 let dailyTempArray = [];
@@ -85,19 +58,19 @@ for (let i = 0; i < 7; i++) {
 <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
 </svg>`
 
-// Returns icon base on weather
-const getDayType = (currentDay) => {
-    if (currentDay == "Clear") {
-        return sunnyIcon;
-    } else {
-        return "";
+    // Returns icon base on weather
+    const getDayType = (currentDay) => {
+        if (currentDay == "Clear") {
+            return sunnyIcon;
+        } else {
+            return "";
+        }
     }
-}
 
     // Get day's and put them in an array
     let day = document.getElementsByClassName("weekday")
-    // Gets certain day
-    // example: monday
+        // Gets certain day
+        // example: monday
 
     let dayelement = day[i]
 
@@ -110,30 +83,10 @@ const getDayType = (currentDay) => {
             <div class=" d-flex justify-content-center">${getDayType(dayIcon)}</div> 
             <div class="text-center">${dailyTempArray[i]}<sup>&#8457;</sup></div>
         </div>`
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 }
 
 // Progress bar animation
-
-// let currentTemp = Math.ceil(data.current.temp);
-
-// let barColor = getTempColor(currentTemp)
-
-
-
-let parent = document.getElementById("wrapper")
-
-let currentFeelLike = data.current.feels_like
-
-let currentHigh = Math.round(data.current.temp.max)
-
-let currentLow = Math.round(data.current.temp.min)
-
-let currentWindSpeed = data.current.wind_speed
-
-let currentUVIndex = data.current.uvi
-
-let currentHumidity = data.current.humidity
 
 let getColor = (temp) => {
     const tempColorArray = ['add8e6', 'E0E000', 'E05A00', 'E32636']
@@ -149,8 +102,67 @@ let getColor = (temp) => {
     }
 }
 
+
+let currentTemp = Math.ceil(data.current.temp.day);
+
+let currentHigh = data.current.temp.max
+
+let currentLow = data.current.temp.min
+
+let barColor = getTempColor(currentTemp)
+
+
+
+// Progress bar animation
+
+
+
+// Gets what color the bar and text will be based off of what temp its is today
+
+// let getTempColor = (temp) => {
+//     const tempArray = ['add8e6', 'E0E000', 'E05A00', 'E32636']
+
+//     if (temp >= 100) {
+//         return `#${tempArray[3]}`
+//     } else if (temp >= 95 && temp < 100) {
+//         return `#${tempArray[2]}`
+//     } else if (temp >= 80 && temp < 95) {
+//         return `#${tempArray[1]}`
+//     } else {
+//         return `#${tempArray[0]}`
+//     }
+// }
+
+// let currentTemp = Math.ceil(data.current.temp);
+
+// getTempColor(60)
+
+// let barColor = getTempColor(currentTemp)
+
+
+
+// let currentTemp = Math.ceil(data.current.temp);
+
+// let barColor = getTempColor(currentTemp)
+
+
+
+let currentInfoWrapper = document.getElementById("wrapperCurrent")
+
+let currentFeelLike = data.current.feels_like
+
+// let currentHigh = Math.round(data.current.temp.max)
+
+// let currentLow = Math.round(data.current.temp.min)
+
+let currentWindSpeed = data.current.wind_speed
+
+let currentUVIndex = data.current.uvi
+
+let currentHumidity = data.current.humidity
+
 let getUVIndexColor = (uvIndex) => {
-    const uvIndexColorArray = ['add8e6', 'E0E000', 'E05A00', 'E32636']
+    const uvIndexColorArray = ['add8e6', 'ffff00', 'E05A00', 'E32636']
 
     if (uvIndex >= 10) {
         return `#${uvIndexColorArray[3]}`
@@ -164,12 +176,17 @@ let getUVIndexColor = (uvIndex) => {
 }
 
 
-parent.innerHTML += `<div class="row p-0" style="margin-bottom: 35px;">
-<div class="col-7" id="feelsLikeWrapper">
+currentInfoWrapper.innerHTML += `<div class="row p-0" style="margin-bottom: 35px;">
+<div class="col-4" id="feelsLikeWrapper">
     <div class="col-12" id="number">${Math.round(currentFeelLike)}<sup>&#8457;</sup></div>
     <div class="col-12" id="title">Feels Like</div>
 </div>
-<div class="col-5 d-flex justify-content-end p-0" id="tempSUnWrapper">
+<div class="col-4" id="wrapper">
+                <progress-ring class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center" stroke="4" radius="60" progress="0">
+                </progress-ring>
+            </div>
+
+<div class="col-4 d-flex justify-content-end p-0" id="tempSUnWrapper">
     <svg id="" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="${getColor(currentFeelLike)}" class="bi bi-brightness-high" viewBox="0 0 16 16">
             <path
                 d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
@@ -179,8 +196,8 @@ parent.innerHTML += `<div class="row p-0" style="margin-bottom: 35px;">
 <div class="row">
 <div class="col-6">
     <div class="col-12">
-        <div class="row w-100">
-            <div class="col-8 p-0">
+        <div class="row" style="justify-content: space-between">
+            <div class="col-8 p-0" style="width: fit-content;">
                 <svg id="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="lightblue" class="bi bi-thermometer-half" viewBox="0 0 16 16">
                     <path
                         d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415z" />
@@ -188,7 +205,7 @@ parent.innerHTML += `<div class="row p-0" style="margin-bottom: 35px;">
                         d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1z" />
                 </svg> High/Low
             </div>
-            <div class="col-4 d-flex justify-content-end">${currentHigh}<sup style="top: .5em;">&#8457;</sup>/ ${currentLow}<sup style="top: .5em;">&#8457;</sup></div>
+            <div class="col-4 d-flex justify-content-end" style="width: fit-content;">${currentHigh}<sup style="top: .5em;">&#8457;</sup>/ ${currentLow}<sup style="top: .5em;">&#8457;</sup></div>
         </div>
     </div>
     <div class="col-12">
@@ -203,6 +220,7 @@ parent.innerHTML += `<div class="row p-0" style="margin-bottom: 35px;">
         </div>
     </div>
 </div>
+
 <div class="col-6">
     <div class="col-12">
         <div class="row d-flex justify-content-between">
@@ -227,3 +245,87 @@ parent.innerHTML += `<div class="row p-0" style="margin-bottom: 35px;">
         </div>
     </div>
 </div>`
+
+
+
+
+class ProgressRing extends HTMLElement {
+    constructor() {
+        super();
+        const stroke = this.getAttribute('stroke');
+        const radius = this.getAttribute('radius');
+
+        const normalizedRadius = radius - stroke * 2;
+        this._circumference = normalizedRadius * 2 * Math.PI;
+
+        this._root = this.attachShadow({ mode: 'open' });
+        // Stroke is the color of the bar
+        this._root.innerHTML = `
+        <svg
+          height="${radius * 2}"
+          width="${radius * 2}"
+         >
+           <circle
+             stroke="${barColor}"
+             stroke-dasharray="${this._circumference} ${this._circumference}"
+             style="stroke-dashoffset:${this._circumference}"
+             stroke-width="${stroke}"
+             fill="transparent"
+             r="${normalizedRadius}"
+             cx="${radius}"
+             cy="${radius}"
+          />
+          <text x="45" y="45" fill="${getTempColor(currentHigh)}" aligment-baseline="middle" font-size="16"> ${currentHigh} </text>
+          <text x="45" y="60" fill="${barColor}" alignment-baseline="middle" font-size="24">${currentTemp}&deg;</text>
+          <text x="40" y="85" fill="${getTempColor(Math.round(currentLow))}" aligment-baseline="middle" font-size="16"> ${currentLow} </text>
+        </svg>
+        <style>
+        text {
+            display: flex;
+  align-items: center;
+  justify-content: center;
+        }
+          circle {
+            transition: stroke-dashoffset 0.35s;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+          }
+        </style>
+      `;
+    }
+
+
+    setProgress(percent) {
+        const offset = this._circumference - (percent / 100 * this._circumference);
+        const circle = this._root.querySelector('circle');
+        circle.style.strokeDashoffset = offset;
+    }
+
+    static get observedAttributes() {
+        return ['progress'];
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+        if (name === 'progress') {
+            this.setProgress(newValue);
+        }
+    }
+}
+
+window.customElements.define('progress-ring', ProgressRing);
+
+// emulate progress attribute change
+let progress = 0;
+const el = document.querySelector('progress-ring');
+
+
+// console.log(currentTemp)
+
+const interval = setInterval(() => {
+    // Increase the bar by 1 every 10ms
+    progress++;
+    el.setAttribute('progress', progress);
+    // stops the bar count if the bar equals the current temp
+    if (progress === currentTemp)
+        clearInterval(interval);
+}, 10);

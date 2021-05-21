@@ -10,7 +10,7 @@ let data = {
         "temp": {
             "day": 80.82,
             "min": 75.64,
-            "max": 90.10,
+            "max": 101,
             "night": 75.2,
             "eve": 86.6,
             "morn": 74.69
@@ -1285,8 +1285,7 @@ let data = {
             "pop": 0
         }
     ],
-    "daily": [
-        {
+    "daily": [{
             "dt": 1619982000,
             "sunrise": 1619959135,
             "sunset": 1620007935,
