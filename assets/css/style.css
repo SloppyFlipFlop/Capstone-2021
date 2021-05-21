@@ -15,9 +15,25 @@ body {
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#title {
+  font-size: 32px;
+}
+
 nav a svg {
   height: 50px;
   width: 50px;
+}
+
+#icon-title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #feelsLikeWrapper #number {
@@ -27,6 +43,10 @@ nav a svg {
 #icon {
   height: 25px;
   width: 25px;
+}
+
+#highLow sup {
+  top: .5em;
 }
 
 .icon-sun {
@@ -42,7 +62,6 @@ nav a svg {
   width: 100px !important;
   -webkit-animation: rotating 10s linear infinite;
           animation: rotating 10s linear infinite;
-  color: #e9ec37;
   -webkit-transform-origin: center !important;
           transform-origin: center !important;
   transform-box: fill-box !important;
