@@ -36,6 +36,13 @@ nav {
     }
 }
 
+#icon-title{
+    width: fit-content;
+}
+
+.row{
+    justify-content: space-between;
+}
 
 // 
 #feelsLikeWrapper {
@@ -49,6 +56,12 @@ nav {
     width: 25px;
 }
 
+#highLow{
+    sup{
+        top: .5em;
+    }
+}
+
 .icon-sun {
     transform-origin: center !important;
     transform-box: fill-box !important;
@@ -60,7 +73,7 @@ nav {
         height: 90px !important;
         width: 100px !important;
         animation: rotating 10s linear infinite;
-        color: #e9ec37;
+        // color: #e9ec37;
         // color: black;
         // Makes the icon spin where it is
         transform-origin: center !important;

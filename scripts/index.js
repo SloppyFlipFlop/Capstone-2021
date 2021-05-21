@@ -106,9 +106,9 @@ const getDayType = (currentDay) => {
 
     // Outputs the stuff to the div's
     dayelement.innerHTML = `<div class="title col-6 text-center" style='color: lightblue'>${daysInWeek[i]}</div> 
-        <div col-6 row mx-auto> 
+        <div col-6 row mx-auto>
             <div class=" d-flex justify-content-center">${getDayType(dayIcon)}</div> 
-            <div class="text-center">${dailyTempArray[i]}</div>
+            <div class="text-center">${dailyTempArray[i]}<sup>&#8457;</sup></div>
         </div>`
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 }
@@ -166,7 +166,7 @@ let getUVIndexColor = (uvIndex) => {
 
 parent.innerHTML += `<div class="row p-0" style="margin-bottom: 35px;">
 <div class="col-7" id="feelsLikeWrapper">
-    <div class="col-12" id="number">${Math.round(currentFeelLike)}&deg;</div>
+    <div class="col-12" id="number">${Math.round(currentFeelLike)}<sup>&#8457;</sup></div>
     <div class="col-12" id="title">Feels Like</div>
 </div>
 <div class="col-5 d-flex justify-content-end p-0" id="tempSUnWrapper">
@@ -188,7 +188,7 @@ parent.innerHTML += `<div class="row p-0" style="margin-bottom: 35px;">
                         d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1z" />
                 </svg> High/Low
             </div>
-            <div class="col-4 d-flex justify-content-end">${currentHigh}&deg;/${currentLow}&deg;</div>
+            <div class="col-4 d-flex justify-content-end">${currentHigh}<sup style="top: .5em;">&#8457;</sup>/ ${currentLow}<sup style="top: .5em;">&#8457;</sup></div>
         </div>
     </div>
     <div class="col-12">
@@ -199,7 +199,7 @@ parent.innerHTML += `<div class="row p-0" style="margin-bottom: 35px;">
                         d="M13.5 0a.5.5 0 0 0 0 1H15v2.75h-.5a.5.5 0 0 0 0 1h.5V7.5h-1.5a.5.5 0 0 0 0 1H15v2.75h-.5a.5.5 0 0 0 0 1h.5V15h-1.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 .5-.5V.5a.5.5 0 0 0-.5-.5h-2zM7 1.5l.364-.343a.5.5 0 0 0-.728 0l-.002.002-.006.007-.022.023-.08.088a28.458 28.458 0 0 0-1.274 1.517c-.769.983-1.714 2.325-2.385 3.727C2.368 7.564 2 8.682 2 9.733 2 12.614 4.212 15 7 15s5-2.386 5-5.267c0-1.05-.368-2.169-.867-3.212-.671-1.402-1.616-2.744-2.385-3.727a28.458 28.458 0 0 0-1.354-1.605l-.022-.023-.006-.007-.002-.001L7 1.5zm0 0-.364-.343L7 1.5zm-.016.766L7 2.247l.016.019c.24.274.572.667.944 1.144.611.781 1.32 1.776 1.901 2.827H4.14c.58-1.051 1.29-2.046 1.9-2.827.373-.477.706-.87.945-1.144zM3 9.733c0-.755.244-1.612.638-2.496h6.724c.395.884.638 1.741.638 2.496C11 12.117 9.182 14 7 14s-4-1.883-4-4.267z" />
                 </svg> humidity
             </div>
-            <div class="col-4 d-flex justify-content-end">${currentHumidity}&deg;</div>
+            <div class="col-4 d-flex justify-content-end">${currentHumidity}<sup style="top: .5em;">&#8457;</sup></div>
         </div>
     </div>
 </div>
