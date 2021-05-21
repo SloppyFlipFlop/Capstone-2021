@@ -20,6 +20,34 @@ nav a svg {
   width: 50px;
 }
 
+#feelsLikeWrapper #number {
+  font-size: 40px;
+}
+
+#icon {
+  height: 25px;
+  width: 25px;
+}
+
+.icon-sun {
+  -webkit-transform-origin: center !important;
+          transform-origin: center !important;
+  transform-box: fill-box !important;
+  -webkit-animation: rotating 10s linear infinite;
+          animation: rotating 10s linear infinite;
+}
+
+#tempSUnWrapper .bi-brightness-high {
+  height: 90px !important;
+  width: 100px !important;
+  -webkit-animation: rotating 10s linear infinite;
+          animation: rotating 10s linear infinite;
+  color: #e9ec37;
+  -webkit-transform-origin: center !important;
+          transform-origin: center !important;
+  transform-box: fill-box !important;
+}
+
 #weekdayWrapper {
   gap: 5px;
 }

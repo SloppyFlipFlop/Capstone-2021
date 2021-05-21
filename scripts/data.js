@@ -1285,7 +1285,8 @@ let data = {
             "pop": 0
         }
     ],
-    "daily": [{
+    "daily": [
+        {
             "dt": 1619982000,
             "sunrise": 1619959135,
             "sunset": 1620007935,
@@ -1367,7 +1368,7 @@ let data = {
             "moonset": 1620157860,
             "moon_phase": 0.78,
             "temp": {
-                "day": 84.78,
+                "day": 70,
                 "min": 71.02,
                 "max": 91.6,
                 "night": 80.85,
@@ -1404,7 +1405,7 @@ let data = {
             "moonset": 1620247920,
             "moon_phase": 0.81,
             "temp": {
-                "day": 86.34,
+                "day": 101,
                 "min": 75.04,
                 "max": 94.68,
                 "night": 85.37,
@@ -1441,7 +1442,7 @@ let data = {
             "moonset": 1620337800,
             "moon_phase": 0.85,
             "temp": {
-                "day": 86.74,
+                "day": 96.74,
                 "min": 75.88,
                 "max": 96.91,
                 "night": 82.69,

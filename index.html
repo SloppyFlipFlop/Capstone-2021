@@ -45,19 +45,23 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./htmls/current.html">Current</a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="./htmls/daily.html">Daily</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./htmls/hourly.html">Hourly</a>
                     </li>
-                    
+
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                    <select name="form-control me-2 mr-3 citys" id="citys" style="    margin-right: 15px;
+                    padding: 0 10px;
+                    width: fit-content;
+                    text-align: center;">
+                        <option value="volvo">Phoenix</option>
+                      </select>
                     <button class="btn btn-outline-info" type="submit">Search</button>
                 </form>
             </div>
@@ -66,48 +70,18 @@
     <!-- /NavBar -->
 
 
-    <!-- Daily Temp -->
+    <!-- Credit: David -->
 
-    <!-- Credit: David and Kevin -->
-
-    <div class="container py-5">
-        <div class="row">
-
-            <div class="col-lg-12 mb-4">
-                <div class="bg-white rounded-lg p-5 shadow">
-                    <h2 class="h6 font-weight-bold text-center mb-4">Today's Weather</h2>
-
-                    <!-- Progress bar 1 -->
-
-                    <progress-ring class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center" stroke="4" radius="60" progress="0">
-                    </progress-ring>
-
-                    <!-- END -->
-
-                    <!-- Today's high and low info -->
-                    <div class="row text-center mt-4">
-                        <div class="col-6 border-right">
-                            <div class="h4 font-weight-bold mb-0" id="todaysHigh">28%</div>
-                            <span class="small text-gray">Feels Like</span>
-                        </div>
-                        <div class="col-6">
-                            <div class="h4 font-weight-bold mb-0" id="todaysLow">
-                                60%
-                            </div>
-                            <span class="small text-gray" id="timeTitle">
-                                Last updated
-                            </span>
-                        </div>
-                    </div>
-                    <!-- END -->
-                </div>
-            </div>
-
+    <div class="container pt-5 mb-4">
+        <div class="row bg-white rounded-lg p-5 shadow" id="wrapper">
+            <div class="col-12 text-center pb-5">Current Weather information</div>
         </div>
+
+    </div>
+    </div>
     </div>
 
-
-    <!-- /Daily Temp -->
+    <!-- /Current data display area -->
 
 
 

@@ -36,6 +36,38 @@ nav {
     }
 }
 
+
+// 
+#feelsLikeWrapper {
+    #number {
+        font-size: 40px;
+    }
+}
+
+#icon {
+    height: 25px;
+    width: 25px;
+}
+
+.icon-sun {
+    transform-origin: center !important;
+    transform-box: fill-box !important;
+    animation: rotating 10s linear infinite;
+}
+
+#tempSUnWrapper {
+    .bi-brightness-high {
+        height: 90px !important;
+        width: 100px !important;
+        animation: rotating 10s linear infinite;
+        color: #e9ec37;
+        // color: black;
+        // Makes the icon spin where it is
+        transform-origin: center !important;
+        transform-box: fill-box !important;
+    }
+}
+
 // Weekly style
 #weekdayWrapper {
     gap: 5px;
