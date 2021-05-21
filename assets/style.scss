@@ -27,6 +27,9 @@ body {
 
 // Navbar styling
 // David
+#title{
+    font-size: 32px;
+}
 nav {
     a {
         svg {
@@ -63,6 +66,7 @@ nav {
 }
 
 .icon-sun {
+
     transform-origin: center !important;
     transform-box: fill-box !important;
     animation: rotating 10s linear infinite;

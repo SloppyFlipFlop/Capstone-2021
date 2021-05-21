@@ -125,7 +125,7 @@ Chart.defaults.global = {
     tooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= value %>",
 
     // String - Template string for multiple tooltips
-    multiTooltipTemplate: "<%= value %>",
+    multiTooltipTemplate: "<%=datasetLabel%> : <%=value%>",
 
     // Function - Will fire on animation progression.
     onAnimationProgress: function() {},
@@ -143,7 +143,7 @@ Chart.defaults.global = {
 const lineGraphData = {
     labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     datasets: [{
-            label: "temperature data( Fahrenheit )",
+            label: "temperature( Fahrenheit )",
             fillColor: "rgba(220,220,220,0.2)",
             strokeColor: "rgba(220,220,220,1)",
             pointColor: "rgba(220,220,220,1)",
@@ -154,7 +154,7 @@ const lineGraphData = {
             data: []
         },
         {
-            label: "Humidity data",
+            label: "Humidity",
             fillColor: "rgba(151,187,205,0.2)",
             strokeColor: "rgba(151,187,205,1)",
             pointColor: "rgba(151,187,205,1)",
@@ -164,7 +164,7 @@ const lineGraphData = {
             data: []
         },
         {
-            label: "Dew Point Data",
+            label: "Dew Point",
             fillColor: "rgba(179, 229, 255, 0.2)",
             strokeColor: "rgba(179, 229, 255, 1)",
             pointColor: "rgba(179, 229, 255, 1)",
