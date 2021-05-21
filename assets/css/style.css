@@ -10,18 +10,30 @@
 
 /* SCSS HSL */
 /* CSS HEX */
+html,
 body {
-  background-color: #d9d9d9ff !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(lightblue), to(#4fb0ce));
+  background: linear-gradient(lightblue, #4fb0ce);
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-#title {
-  font-size: 32px;
-}
-
 nav a svg {
   height: 50px;
   width: 50px;
+}
+
+nav div #navbarSupportedContent form section#citys {
+  margin-right: 15px !important;
+  padding: 0 10px !important;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  text-align: center !important;
+  border-radius: 0.5rem !important;
+}
+
+#title {
+  font-size: 32px;
 }
 
 #icon-title {
@@ -36,8 +48,18 @@ nav a svg {
           justify-content: space-between;
 }
 
+#feelsLikeWrapper {
+  padding-top: 25px;
+}
+
 #feelsLikeWrapper #number {
-  font-size: 40px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#feelsLikeWrapper #title {
+  font-size: 16px;
+  text-align: center;
 }
 
 #icon {
@@ -46,7 +68,7 @@ nav a svg {
 }
 
 #highLow sup {
-  top: .5em;
+  top: 0.5em;
 }
 
 .icon-sun {

@@ -18,8 +18,10 @@ $ming: #3c6e71ff;
 $white: #ffffffff;
 $gainsboro: #d9d9d9ff;
 $indigo-dye: #284b63;
+// Background Color od the website
+html,
 body {
-    background-color: $gainsboro !important;
+    background: linear-gradient(lightblue, rgb(79, 176, 206));
 }
 
 
@@ -27,9 +29,6 @@ body {
 
 // Navbar styling
 // David
-#title{
-    font-size: 32px;
-}
 nav {
     a {
         svg {
@@ -37,20 +36,44 @@ nav {
             width: 50px;
         }
     }
+    div {
+        #navbarSupportedContent {
+            form {
+                section#citys {
+                    margin-right: 15px;
+                    padding: 0 10px;
+                    width: fit-content;
+                    text-align: center;
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+    }
 }
 
-#icon-title{
+// current Weather information styling
+#title {
+    font-size: 32px;
+}
+
+#icon-title {
     width: fit-content;
 }
 
-.row{
+.row {
     justify-content: space-between;
 }
 
-// 
+//
 #feelsLikeWrapper {
+    padding-top: 25px;
     #number {
-        font-size: 40px;
+        font-size: 30px;
+        text-align: center;
+    }
+    #title {
+        font-size: 16px;
+        text-align: center;
     }
 }
 
@@ -59,14 +82,13 @@ nav {
     width: 25px;
 }
 
-#highLow{
-    sup{
-        top: .5em;
+#highLow {
+    sup {
+        top: 0.5em;
     }
 }
 
 .icon-sun {
-
     transform-origin: center !important;
     transform-box: fill-box !important;
     animation: rotating 10s linear infinite;
